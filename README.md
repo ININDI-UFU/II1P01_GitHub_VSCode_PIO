@@ -123,8 +123,6 @@ Ao final deste procedimento, o ambiente estará:
 <details close>
   <summary><strong> 📖 Introdução </strong></summary>
 
-Este material corresponde à **Aula Prática 02: Trabalhando com GitHub e PlatformIO no VSCode com ESP32**.
-
 Este projeto explora o uso integrado do GitHub, Visual Studio Code (VSCode) e PlatformIO para o desenvolvimento de aplicações com ESP32. Essa combinação de ferramentas facilita o controle de versão, a colaboração em equipe e o desenvolvimento eficiente para microcontroladores. Aqui estão algumas informações importantes sobre as ferramentas utilizadas:
 
 #### GitHub
@@ -182,7 +180,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 ---
 <a id="baixando"></a>
 <details close>
-  <summary><strong> ⬇️ Baixando </strong></summary>
+  <summary><strong> ⬇️ Baixando o pacote ININDUFU </strong></summary>
 
 <a id="baixando-passo-1"></a>
 ### 🔹 Passo 1 – Acessar o link do instalador da disciplina
@@ -816,7 +814,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 ---
 <a id="platformio"></a>
 <details close>
-  <summary><strong> 🛠️ Configurando-o-platformio-no-VSCode </strong></summary>
+  <summary><strong> 🛠️ Configurando o platformio no VSCode </strong></summary>
 
 <a id="platformio-passo-1"></a>
 ### 🔹 Passo 1 – Abrir a área de extensões do VS Code
