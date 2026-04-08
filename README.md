@@ -961,6 +961,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 1. Se necessário, abra o terminal integrado do VS Code.
 2. Configure sua identidade:
+
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
