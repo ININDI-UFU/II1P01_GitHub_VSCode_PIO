@@ -960,11 +960,21 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 ![fig5](assets/7.github/fig05.png)
 
 1. Se necessário, abra o terminal integrado do VS Code.
-2. Configure sua identidade com `git config --global user.name "Seu Nome"` e `git config --global user.email "seu@email.com"`.
+2. Configure sua identidade:
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+```
 3. Escreva a mensagem do commit inicial e clique em **Commit**.
 
 ⚠️ *Sem `user.name` e `user.email`, o Git pode bloquear a criação do commit.*
 
+4. Para limpar suas credenciais do GitHub, utilize:
+
+```bash
+git config --global --unset user.name
+git config --global --unset user.email
+``` 
 ---
 
 <a id="github-passo-6"></a>
