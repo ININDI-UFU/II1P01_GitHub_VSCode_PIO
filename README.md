@@ -68,6 +68,16 @@
   - [Passo 6 – Aguardar a cópia dos arquivos](#com0com-passo-6)
   - [Passo 7 – Encerrar o assistente do com0com](#com0com-passo-7)
 
+- [⚙️ Configurando o com0com](#config-com0com)
+  - [Passo 1 – Abrir o menu Iniciar e acessar as Configurações](#config-com0com-passo-1)
+  - [Passo 2 – Verificar atualizações no Windows Update](#config-com0com-passo-2)
+  - [Passo 3 – Acessar as Opções avançadas do Windows Update](#config-com0com-passo-3)
+  - [Passo 4 – Selecionar e instalar o driver CNCPorts](#config-com0com-passo-4)
+  - [Passo 5 – Navegar até a pasta de instalação do com0com](#config-com0com-passo-5)
+  - [Passo 6 – Autorizar a execução do setupg.exe](#config-com0com-passo-6)
+  - [Passo 7 – Adicionar um par de portas virtuais no Setup do com0com](#config-com0com-passo-7)
+  - [Passo 8 – Renomear a porta e aplicar a configuração](#config-com0com-passo-8)
+
 - [💻 Instalando o VSCode](#vscode)
   - [Passo 1 – Escolher o modo de instalação do VS Code](#vscode-passo-1)
   - [Passo 2 – Confirmar o aviso do instalador](#vscode-passo-2)
@@ -86,9 +96,14 @@
   - [Passo 6 – Instalar a extensão Open in External App](#extensions-passo-6)
   - [Passo 7 – Instalar a extensão Batch Runner](#extensions-passo-7)
 
-- [Fazendo um fork no github](#fork)
+- [🍴 Fazendo um fork no github](#fork)
+  - [Passo 1 – Acessar a atividade prática no ambiente da disciplina](#fork-passo-1)
+  - [Passo 2 – Clicar no botão Fork no repositório do GitHub](#fork-passo-2)
+  - [Passo 3 – Fazer login na conta do GitHub](#fork-passo-3)
+  - [Passo 4 – Confirmar a criação do fork](#fork-passo-4)
+  - [Passo 5 – Sincronizar o fork com o repositório original](#fork-passo-5)
 
-- [🆕 Configurando o platformio no VSCode][def]  
+- [🆕 Criando um novo projeto com o PlatformIO](#new-platformio)  
   - [Passo 1 – Abrir a PIO Home e iniciar um novo projeto](#new-platformio-passo-1)
   - [Passo 2 – Preencher o assistente de criação do projeto](#new-platformio-passo-2)
   - [Passo 3 – Aguardar a geração da estrutura PlatformIO](#new-platformio-passo-3)
@@ -723,6 +738,101 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 </details>
 
 ---
+<a id="config-com0com"></a>
+<details close>
+  <summary><strong> ⚙️ Configurando o com0com </strong></summary>
+
+<a id="config-com0com-passo-1"></a>
+### 🔹 Passo 1 – Abrir o menu Iniciar e acessar as Configurações
+![fig1](assets/4.1.config-com0com/Fig01.png)
+
+1. Clique no botão **Iniciar** na barra de tarefas do Windows.
+2. Clique no ícone de **Configurações** para abrir as definições do sistema.
+
+💡 *As Configurações do Windows serão usadas para instalar o driver necessário ao com0com.*
+
+---
+
+<a id="config-com0com-passo-2"></a>
+### 🔹 Passo 2 – Verificar atualizações no Windows Update
+![fig2](assets/4.1.config-com0com/Fig02.png)
+
+1. No menu lateral, clique em **Windows Update**.
+2. Clique em **Verificar se há atualizações** para atualizar a lista de drivers disponíveis.
+3. Clique em **Opções avançadas** para acessar as atualizações opcionais.
+
+💡 *O driver do com0com é distribuído como atualização opcional de driver pelo Windows Update.*
+
+---
+
+<a id="config-com0com-passo-3"></a>
+### 🔹 Passo 3 – Acessar as Opções avançadas do Windows Update
+![fig3](assets/4.1.config-com0com/Fig03.png)
+
+1. Na tela de Opções avançadas, clique em **Atualizações opcionais**.
+2. Aguarde o sistema carregar a lista de drivers disponíveis.
+
+---
+
+<a id="config-com0com-passo-4"></a>
+### 🔹 Passo 4 – Selecionar e instalar o driver CNCPorts
+![fig4](assets/4.1.config-com0com/Fig04.png)
+
+1. Na lista de **Atualizações de driver**, marque a opção **Vyacheslav Frolov - CNCPorts**.
+2. Clique em **Baixar e instalar** para iniciar a instalação do driver.
+
+⚠️ *Sem esse driver, o com0com pode não criar corretamente as portas seriais virtuais no sistema.*
+
+---
+
+<a id="config-com0com-passo-5"></a>
+### 🔹 Passo 5 – Navegar até a pasta de instalação do com0com
+![fig5](assets/4.1.config-com0com/Fig05.png)
+
+1. Abra o **Explorador de Arquivos** e navegue até `C:\Arquivos de Programas (x86)\com0com`.
+2. Localize o arquivo **setupg.exe** e dê **duplo clique** para executá-lo.
+
+💡 *O setupg.exe é a interface gráfica de configuração do com0com.*
+
+---
+
+<a id="config-com0com-passo-6"></a>
+### 🔹 Passo 6 – Autorizar a execução do setupg.exe
+![fig6](assets/4.1.config-com0com/Fig06.png)
+
+1. Quando o **Controle de Conta de Usuário** solicitar permissão, clique em **Sim** para autorizar.
+2. Aguarde a abertura da janela de configuração do com0com.
+
+⚠️ *É necessário ter permissão de administrador para configurar as portas virtuais.*
+
+---
+
+<a id="config-com0com-passo-7"></a>
+### 🔹 Passo 7 – Adicionar um par de portas virtuais no Setup do com0com
+![fig7](assets/4.1.config-com0com/Fig07.png)
+
+1. Na janela **Setup for com0com**, clique em **Add Pair** para criar um novo par de portas virtuais.
+2. Observe as opções de configuração disponíveis para cada porta do par.
+3. Clique em **Apply** para salvar as configurações.
+
+💡 *Cada par criado conecta duas portas virtuais entre si, permitindo a comunicação serial entre aplicações.*
+
+---
+
+<a id="config-com0com-passo-8"></a>
+### 🔹 Passo 8 – Renomear a porta e aplicar a configuração
+![fig8](assets/4.1.config-com0com/Fig08.png)
+
+1. No campo de nome da porta, altere para o nome desejado, por exemplo **COM10**.
+2. Clique em **Apply** para confirmar a alteração.
+
+⚠️ *Certifique-se de usar um número de porta que não esteja em uso por outro dispositivo no sistema.*
+
+✅ *O com0com está configurado e as portas virtuais estão prontas para uso.*
+
+</details>
+
+---
 <a id="vscode"></a>
 <details close>
   <summary><strong> 💻 Instalando o vscode </strong></summary>
@@ -921,7 +1031,64 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="fork"></a>
 <details close>
-  <summary><strong> Fazendo um fork no github </strong></summary>
+  <summary><strong> 🍴 Fazendo um fork no github </strong></summary>
+
+<a id="fork-passo-1"></a>
+### 🔹 Passo 1 – Acessar a atividade prática no ambiente da disciplina
+![fig1](assets/6.2.fork/fig01.png)
+
+1. Acesse o ambiente da disciplina e localize o bloco correspondente à atividade prática.
+2. Clique na atividade **Prática 01: GitHub + VSCode + Platform.IO** para abrir os detalhes.
+
+💡 *Dentro da atividade prática você encontrará o link do repositório no GitHub que deverá ser copiado via fork.*
+
+---
+
+<a id="fork-passo-2"></a>
+### 🔹 Passo 2 – Clicar no botão Fork no repositório do GitHub
+![fig2](assets/6.2.fork/fig02.png)
+
+1. Acesse a página do repositório **II1P01_GitHub_VSCode_PIO** no GitHub.
+2. Clique no botão **Fork** localizado no canto superior direito da página.
+
+💡 *O fork cria uma cópia do repositório na sua própria conta, permitindo que você faça alterações sem afetar o projeto original.*
+
+---
+
+<a id="fork-passo-3"></a>
+### 🔹 Passo 3 – Fazer login na conta do GitHub
+![fig3](assets/6.2.fork/fig03.png)
+
+1. Caso não esteja autenticado, o GitHub exibirá a tela de login.
+2. Informe seu **usuário ou e-mail** e sua **senha**.
+3. Clique em **Sign in** para continuar.
+
+⚠️ *Sem estar autenticado, não é possível realizar o fork do repositório.*
+
+---
+
+<a id="fork-passo-4"></a>
+### 🔹 Passo 4 – Confirmar a criação do fork
+![fig4](assets/6.2.fork/fig04.png)
+
+1. Na tela **Create a new fork**, confira o **Owner** (sua conta) e o **Repository name**.
+2. Mantenha a opção **Copy the main branch only** marcada.
+3. Clique em **Create fork** para confirmar a cópia do repositório.
+
+💡 *Após a criação, o repositório aparecerá na sua conta pessoal do GitHub.*
+
+---
+
+<a id="fork-passo-5"></a>
+### 🔹 Passo 5 – Sincronizar o fork com o repositório original
+![fig5](assets/6.2.fork/fig05.png)
+
+1. Na página do seu fork, observe se há um aviso indicando que o branch está atrás do repositório original.
+2. Clique em **Update branch** para sincronizar o fork com as alterações mais recentes do repositório de origem.
+
+⚠️ *Manter o fork atualizado evita conflitos e garante que você esteja trabalhando com a versão mais recente do projeto.*
+
+✅ *O fork foi criado com sucesso e está pronto para ser clonado e utilizado no VS Code.*
 
 </details>
 
@@ -929,7 +1096,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="new-platformio"></a>
 <details close>
-  <summary><strong> 🆕 Criando um novo projeto no PlatformIO </strong></summary>
+  <summary><strong> 🆕 Criando um novo projeto com o PlatformIO </strong></summary>
 
 <a id="new-platformio-passo-1"></a>
 ### 🔹 Passo 1 – Abrir a PIO Home e iniciar um novo projeto
