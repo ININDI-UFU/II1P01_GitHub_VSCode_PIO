@@ -1135,10 +1135,70 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 ![fig7](assets/6.platformio/fig07.png)
 
 1. Verifique se foram criadas pastas como `src`, `include`, `lib` e o arquivo `platformio.ini`.
-2. Abra o arquivo **platformio.ini** para conferir a configuração inicial da placa e do framework.
-3. Confirme que o projeto está pronto para edição, compilação e upload.
+2. Abra o arquivo **platformio.ini** cole o seguinte conteúdo.
+
+```bash
+
+[env:esp32s3]
+platform = espressif32
+framework = arduino
+board = esp32-s3-devkitc-1
+
+upload_protocol = esp-builtin
+monitor_speed = 115200
+
+lib_deps = 
+
+build_src_filter = +<main.cpp>
+
+```
 
 ✅ *O ambiente PlatformIO está configurado para iniciar o desenvolvimento com ESP32.*
+
+3. Abra na pasta **src** o arquivo **main.cpp** e cole o seguinte código.
+
+```cpp
+
+#include <Arduino.h>
+#include <esp32-hal-rgb-led.h>
+
+constexpr uint8_t LED_PIN = 23;
+const uint8_t COLORS[][3] = {
+    {32, 0, 0}, {0, 32, 0}, {0, 0, 32},
+    {32, 32, 0}, {0, 32, 32}, {32, 0, 32},
+};
+constexpr size_t NUM_COLORS = sizeof(COLORS) / sizeof(COLORS[0]);
+
+void setup()
+{
+  pinMode(LED_PIN, OUTPUT);
+  neopixelWrite(RGB_BUILTIN, COLORS[0][0], COLORS[0][1], COLORS[0][2]);
+}
+
+void loop()
+{
+  uint32_t now = millis();
+
+  constexpr uint32_t BLINK_MS = 1000;
+  static uint32_t prevBlink = 0;
+  static bool ledState = false;
+  if (now - prevBlink >= BLINK_MS) {
+    prevBlink = now;
+    ledState = !ledState;
+    digitalWrite(LED_PIN, ledState);
+  }
+
+  constexpr uint32_t COLOR_MS = 1000;
+  static uint32_t prevColor = 0;
+  static size_t colorIdx = 0;  
+  if (now - prevColor >= COLOR_MS) {
+    prevColor = now;
+    colorIdx = (colorIdx + 1) % NUM_COLORS;
+    neopixelWrite(RGB_BUILTIN, COLORS[colorIdx][0], COLORS[colorIdx][1], COLORS[colorIdx][2]);
+  }
+}
+
+```
 
 ---
 
