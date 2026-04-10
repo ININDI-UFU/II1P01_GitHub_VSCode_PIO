@@ -77,12 +77,18 @@
   - [Passo 6 – Concluir a instalação do editor](#vscode-passo-6)
   - [Passo 7 – Fechar o prompt do instalador](#vscode-passo-7)
 
-- [🆕 Configurando o platformio no VSCode](#platformio)
-  - [Passo 1 – Abrir a área de extensões do VS Code](#platformio-passo-1)
-  - [Passo 2 – Instalar a extensão PlatformIO IDE](#platformio-passo-2)
-  - [Passo 3 – Confirmar a extensão carregada no VS Code](#platformio-passo-3)
+- [🛠️ Instalando extensões no VScode](#extensions)
+  - [Passo 1 – Instalar o Git & GitHub Extension Pack](#extensions-passo-1)
+  - [Passo 2 – Instalar a extensão LasecGitSession](#extensions-passo-2)
+  - [Passo 3 – Instalar a extensão lasecplot](#extensions-passo-3)
+  - [Passo 4 – Instalar o Python Extension Pack](#extensions-passo-4)
+  - [Passo 5 – Instalar o PlatformIO IDE](#extensions-passo-5)
+  - [Passo 6 – Instalar a extensão Open in External App](#extensions-passo-6)
+  - [Passo 7 – Instalar a extensão Batch Runner](#extensions-passo-7)
 
-- [🛠️ Configurando o platformio no VSCode][def]  
+- [Fazendo um fork no github](#fork)
+
+- [🆕 Configurando o platformio no VSCode][def]  
   - [Passo 1 – Abrir a PIO Home e iniciar um novo projeto](#new-platformio-passo-1)
   - [Passo 2 – Preencher o assistente de criação do projeto](#new-platformio-passo-2)
   - [Passo 3 – Aguardar a geração da estrutura PlatformIO](#new-platformio-passo-3)
@@ -814,39 +820,108 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 </details>
 
 ---
-<a id="platformio"></a>
+<a id="extensions"></a>
 <details close>
-  <summary><strong> 🛠️ Configurando o platformio no VSCode </strong></summary>
+  <summary><strong> 🛠️ Instalando extensões no VScode </strong></summary>
 
-<a id="platformio-passo-1"></a>
-### 🔹 Passo 1 – Abrir a área de extensões do VS Code
-![fig1](assets/6.platformio/fig01.png)
+<a id="extensions-passo-1"></a>
+### 🔹 Passo 1 – Instalar o Git & GitHub Extension Pack
+![fig1](assets/6.1.extensions/fig01.png)
 
-1. Abra o **VS Code**.
-2. Clique no ícone de **Extensões** na barra lateral esquerda.
-3. Prepare o editor para pesquisar a extensão do PlatformIO.
+1. Clique no ícone de **Extensões** na barra lateral do VS Code.
+2. Digite **GitHub pack** no campo de busca.
+3. Clique sobre a extensão **Git & GitHub Extension Pack** na lista de resultados.
+4. Clique em **Instalar** para adicionar o pacote ao editor.
 
----
-
-<a id="platformio-passo-2"></a>
-### 🔹 Passo 2 – Instalar a extensão PlatformIO IDE
-![fig2](assets/6.platformio/fig02.png)
-
-1. Pesquise por **PlatformIO IDE** na lista de extensões.
-2. Selecione a extensão oficial mostrada na imagem.
-3. Clique em **Install** para iniciar a instalação.
-
-💡 *A instalação dessa extensão transforma o VS Code em um ambiente de desenvolvimento para microcontroladores.*
+💡 *Esse pacote reúne extensões essenciais para trabalhar com Git e GitHub diretamente no VS Code.*
 
 ---
 
-<a id="platformio-passo-3"></a>
-### 🔹 Passo 3 – Confirmar a extensão carregada no VS Code
-![fig3](assets/6.platformio/fig03.png)
+<a id="extensions-passo-2"></a>
+### 🔹 Passo 2 – Instalar a extensão LasecGitSession
+![fig2](assets/6.1.extensions/fig02.png)
 
-1. Após a instalação, confirme que o ícone do **PlatformIO** aparece na barra lateral.
-2. Verifique se o VS Code reconheceu corretamente a nova extensão.
-3. Caso necessário, reinicie o editor.
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **lasec** no campo de busca.
+3. Clique sobre a extensão **LasecGitSession** na lista de resultados.
+4. Clique em **Instalar** para adicioná-la ao VS Code.
+
+💡 *Essa extensão prepara e encerra a sessão do aluno no Git em ambientes compartilhados, usando configuração global do Git.*
+
+---
+
+<a id="extensions-passo-3"></a>
+### 🔹 Passo 3 – Instalar a extensão lasecplot
+![fig3](assets/6.1.extensions/fig03.png)
+
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **lasec** no campo de busca.
+3. Clique sobre a extensão **lasecplot** na lista de resultados.
+4. Clique em **Instalar** para adicioná-la ao VS Code.
+
+💡 *O lasecplot é um visualizador de telemetria (fork do Teleplot) usado para monitorar dados durante os experimentos.*
+
+---
+
+<a id="extensions-passo-4"></a>
+### 🔹 Passo 4 – Instalar o Python Extension Pack
+![fig4](assets/6.1.extensions/fig04.png)
+
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **python pack** no campo de busca.
+3. Clique sobre a extensão **Python Extension Pack** na lista de resultados.
+4. Clique em **Instalar** para adicionar o pacote ao editor.
+
+💡 *Esse pacote inclui extensões populares para desenvolvimento em Python, como linting, formatação e depuração.*
+
+---
+
+<a id="extensions-passo-5"></a>
+### 🔹 Passo 5 – Instalar o PlatformIO IDE
+![fig5](assets/6.1.extensions/fig05.png)
+
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **platformio** no campo de busca.
+3. Clique sobre a extensão **PlatformIO IDE** na lista de resultados.
+4. Clique em **Instalar** para adicionar a extensão ao VS Code.
+
+⚠️ *O PlatformIO é fundamental para compilar, enviar e depurar projetos com ESP32 dentro do VS Code.*
+
+---
+
+<a id="extensions-passo-6"></a>
+### 🔹 Passo 6 – Instalar a extensão Open in External App
+![fig6](assets/6.1.extensions/fig06.png)
+
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **open-in** no campo de busca.
+3. Clique sobre a extensão **Open in External App** na lista de resultados.
+4. Clique em **Instalar** para adicioná-la ao VS Code.
+
+💡 *Essa extensão permite abrir arquivos com aplicativos externos diretamente a partir do editor.*
+
+---
+
+<a id="extensions-passo-7"></a>
+### 🔹 Passo 7 – Instalar a extensão Batch Runner
+![fig7](assets/6.1.extensions/fig07.png)
+
+1. Clique no ícone de **Extensões** na barra lateral.
+2. Digite **batch-** no campo de busca.
+3. Clique sobre a extensão **Batch Runner** na lista de resultados.
+4. Clique em **Instalar** para adicioná-la ao VS Code.
+
+💡 *O Batch Runner permite executar arquivos `.bat` e `.cmd` rapidamente no terminal do VS Code.*
+
+✅ *Todas as extensões necessárias para a disciplina foram instaladas com sucesso.*
+
+</details>
+
+---
+
+<a id="fork"></a>
+<details close>
+  <summary><strong> Fazendo um fork no github </strong></summary>
 
 </details>
 

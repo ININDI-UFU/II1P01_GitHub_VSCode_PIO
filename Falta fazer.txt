@@ -1,0 +1,13 @@
+Falta fazer:
+
+Instalando o SimulIDE
+
+Fazendo o "Fork"
+
+Fazendo o clone Repository 
+
+Rodando um código no VScode
+
+
+ 
+
