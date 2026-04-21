@@ -96,6 +96,11 @@
   - [Passo 6 – Instalar a extensão Open in External App](#extensions-passo-6)
   - [Passo 7 – Instalar a extensão Batch Runner](#extensions-passo-7)
 
+- [🆕 Criando um novo projeto com o PlatformIO](#new-platformio)  
+  - [Passo 1 – Abrir a PIO Home e iniciar um novo projeto](#new-platformio-passo-1)
+  - [Passo 2 – Preencher o assistente de criação do projeto](#new-platformio-passo-2)
+  - [Passo 3 – Aguardar a geração da estrutura PlatformIO](#new-platformio-passo-3)
+
 - [🍴 Fazendo um fork no github](#fork)
   - [Passo 1 – Acessar a atividade prática no ambiente da disciplina](#fork-passo-1)
   - [Passo 2 – Clicar no botão Fork no repositório do GitHub](#fork-passo-2)
@@ -103,16 +108,12 @@
   - [Passo 4 – Confirmar a criação do fork](#fork-passo-4)
   - [Passo 5 – Sincronizar o fork com o repositório original](#fork-passo-5)
 
-- [🆕 Criando um novo projeto com o PlatformIO](#new-platformio)  
-  - [Passo 1 – Abrir a PIO Home e iniciar um novo projeto](#new-platformio-passo-1)
-  - [Passo 2 – Preencher o assistente de criação do projeto](#new-platformio-passo-2)
-  - [Passo 3 – Aguardar a geração da estrutura PlatformIO](#new-platformio-passo-3)
-  - [Passo 4 – Compilar o projeto (Build)](#new-platformio-passo-4)
-  - [Passo 5 – Acompanhar a compilação](#new-platformio-passo-5)
-  - [Passo 6 – Conectar e selecionar a porta COM](#new-platformio-passo-6)
-  - [Passo 7 – Escolher a porta correta](#new-platformio-passo-7)
-  - [Passo 8 – Fazer upload para a placa](#new-platformio-passo-8)
-  - [Passo 9 – Confirmar execução na placa](#new-platformio-passo-9)
+- [🌿 Compilando e executando o projeto](#compile)
+  - [Passo 1 – Alterar os arquivos de compilação](#compile-passo-1)
+  - [Passo 2 – Aguardar a conclusão da compilação](#compile-passo-2)
+  - [Passo 3 – Conectar o ESP32 e selecionar a porta COM](#compile-passo-3)
+  - [Passo 4 – Fazer upload para a placa](#compile-passo-4)
+  - [Passo 5 – Confirmar execução na placa](#compile-passo-5)
 
 - [☁️ Fazendo uma publicação do VSCode no GitHub](#github)
   - [Passo 1 – Iniciar login pela extensão](#github-passo-1a)
@@ -306,7 +307,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-1"></a>
 ### 🔹 Passo 1 – Localizar o instalador do pacote ININDUFU
-![fig1](assets/1.computador/fig01.png)
+![fig11](assets/1.computador/fig01.png)
 
 1. Acesse a pasta onde o instalador foi salvo, como a pasta **Downloads**.
 2. Localize o arquivo do pacote **ININDUFU** mostrado na imagem.
@@ -318,7 +319,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-2"></a>
 ### 🔹 Passo 2 – Abrir os detalhes do alerta do Windows
-![fig2](assets/1.computador/fig02.png)
+![fig12](assets/1.computador/fig02.png)
 
 1. Caso o Windows exiba a mensagem **O Windows protegeu o computador**, não feche a janela.
 2. Clique em **Mais informações** para liberar as opções do instalador.
@@ -330,7 +331,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-3"></a>
 ### 🔹 Passo 3 – Executar o instalador mesmo assim
-![fig3](assets/1.computador/fig03.png)
+![fig13](assets/1.computador/fig03.png)
 
 1. Após abrir os detalhes, clique em **Executar assim mesmo**.
 2. Aguarde o carregamento do assistente de instalação.
@@ -340,7 +341,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-4"></a>
 ### 🔹 Passo 4 – Iniciar o assistente de instalação
-![fig4](assets/1.computador/fig04.png)
+![fig14](assets/1.computador/fig04.png)
 
 1. Na tela de boas-vindas do instalador, leia a mensagem inicial.
 2. Confirme que o computador está pronto para continuar a instalação.
@@ -352,7 +353,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-5"></a>
 ### 🔹 Passo 5 – Conferir os componentes incluídos no pacote
-![fig5](assets/1.computador/fig05.png)
+![fig15](assets/1.computador/fig05.png)
 
 1. Observe a lista de programas que fazem parte do pacote.
 2. Verifique se aparecem itens como **VS Code**, **Python**, **Git**, **com0com** e **SimulIDE**.
@@ -364,7 +365,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-6"></a>
 ### 🔹 Passo 6 – Definir a pasta de instalação
-![fig6](assets/1.computador/fig06.png)
+![fig16](assets/1.computador/fig06.png)
 
 1. Verifique o diretório onde o pacote será instalado.
 2. Caso necessário, utilize o botão de navegação para alterar o caminho.
@@ -376,7 +377,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-7"></a>
 ### 🔹 Passo 7 – Confirmar o início da instalação
-![fig7](assets/1.computador/fig07.png)
+![fig17](assets/1.computador/fig07.png)
 
 1. Revise as informações finais apresentadas pelo assistente.
 2. Clique em **Start** para iniciar a instalação do pacote.
@@ -386,7 +387,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-8"></a>
 ### 🔹 Passo 8 – Concluir a instalação do pacote
-![fig8](assets/1.computador/fig08.png)
+![fig18](assets/1.computador/fig08.png)
 
 1. Verifique a mensagem indicando que a instalação foi concluída com sucesso.
 2. Clique em **Next >** para ir para a tela final.
@@ -398,7 +399,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="computador-passo-9"></a>
 ### 🔹 Passo 9 – Encerrar a tela final do instalador
-![fig9](assets/1.computador/fig09.png)
+![fig19](assets/1.computador/fig09.png)
 
 1. Leia a mensagem final apresentada pelo criador do instalador.
 2. Clique em **Exit** para fechar a janela.
@@ -413,7 +414,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-1"></a>
 ### 🔹 Passo 1 – Selecionar a instalação personalizada e habilitar o PATH
-![fig1](assets/2.python/fig01.png)
+![fig21](assets/2.python/fig01.png)
 
 1. Marque a opção **Add python.exe to PATH** antes de continuar.
 2. Clique em **Customize installation** para abrir as opções de instalação.
@@ -425,7 +426,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-2"></a>
 ### 🔹 Passo 2 – Confirmar os recursos opcionais
-![fig2](assets/2.python/fig02.png)
+![fig22](assets/2.python/fig02.png)
 
 1. Verifique os recursos opcionais apresentados, como **pip** e **py launcher**.
 2. Mantenha as opções recomendadas da instalação marcadas.
@@ -437,7 +438,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-3"></a>
 ### 🔹 Passo 3 – Ajustar as opções avançadas
-![fig3](assets/2.python/fig03.png)
+![fig23](assets/2.python/fig03.png)
 
 1. Confira as opções avançadas, especialmente as relacionadas a associação de arquivos e variáveis de ambiente.
 2. Verifique o diretório de instalação que será utilizado.
@@ -447,7 +448,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-4"></a>
 ### 🔹 Passo 4 – Aguardar a instalação do interpretador
-![fig4](assets/2.python/fig04.png)
+![fig24](assets/2.python/fig04.png)
 
 1. Aguarde o avanço da barra de progresso da instalação.
 2. Não feche a janela enquanto o processo estiver em execução.
@@ -457,7 +458,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-5"></a>
 ### 🔹 Passo 5 – Finalizar o assistente do Python
-![fig5](assets/2.python/fig05.png)
+![fig25](assets/2.python/fig05.png)
 
 1. Ao visualizar a mensagem **Setup was successful**, confirme que a instalação terminou corretamente.
 2. Se desejar, avalie a opção **Disable path length limit**.
@@ -469,7 +470,7 @@ O PlatformIO é um ambiente de desenvolvimento integrado (IDE) que facilita o de
 
 <a id="python-passo-6"></a>
 ### 🔹 Passo 6 – Validar a instalação no Prompt de Comando
-![fig6](assets/2.python/fig06.png)
+![fig26](assets/2.python/fig06.png)
 
 1. Abra o **Prompt de Comando** do Windows.
 2. Execute o comando `python --version`.
@@ -494,7 +495,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-1"></a>
 ### 🔹 Passo 1 – Avançar pela tela inicial do instalador
-![fig1](assets/3.git/fig01.png)
+![fig31](assets/3.git/fig01.png)
 
 1. Abra o instalador do **Git for Windows**.
 2. Leia a tela inicial com as informações e termos apresentados.
@@ -504,7 +505,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-2"></a>
 ### 🔹 Passo 2 – Definir a pasta de instalação do Git
-![fig2](assets/3.git/fig02.png)
+![fig32](assets/3.git/fig02.png)
 
 1. Verifique o diretório sugerido pelo instalador.
 2. Mantenha o caminho padrão, salvo se houver orientação diferente.
@@ -514,7 +515,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-3"></a>
 ### 🔹 Passo 3 – Conferir os componentes adicionais
-![fig3](assets/3.git/fig03.png)
+![fig33](assets/3.git/fig03.png)
 
 1. Observe a lista de componentes e integrações disponíveis.
 2. Mantenha as opções padrão exibidas na imagem.
@@ -526,7 +527,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-4"></a>
 ### 🔹 Passo 4 – Escolher a pasta do menu Iniciar
-![fig4](assets/3.git/fig04.png)
+![fig34](assets/3.git/fig04.png)
 
 1. Verifique o nome da pasta que será criada no menu Iniciar.
 2. Mantenha a sugestão padrão do instalador.
@@ -536,7 +537,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-5"></a>
 ### 🔹 Passo 5 – Manter o editor padrão do Git
-![fig5](assets/3.git/fig05.png)
+![fig35](assets/3.git/fig05.png)
 
 1. Observe o editor padrão selecionado pelo instalador.
 2. Mantenha a opção exibida na imagem para preservar o padrão da instalação.
@@ -548,7 +549,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-6"></a>
 ### 🔹 Passo 6 – Definir o nome da branch inicial
-![fig6](assets/3.git/fig06.png)
+![fig36](assets/3.git/fig06.png)
 
 1. Na configuração da branch inicial, marque a opção de nome personalizado.
 2. Preencha com **main**, conforme mostrado na imagem.
@@ -560,7 +561,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-7"></a>
 ### 🔹 Passo 7 – Ajustar o ambiente PATH
-![fig7](assets/3.git/fig07.png)
+![fig37](assets/3.git/fig07.png)
 
 1. Na configuração do PATH, selecione a opção intermediária recomendada.
 2. Essa opção permite usar o Git no terminal do Windows e também em outras ferramentas.
@@ -572,7 +573,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-8"></a>
 ### 🔹 Passo 8 – Escolher o executável SSH
-![fig8](assets/3.git/fig08.png)
+![fig38](assets/3.git/fig08.png)
 
 1. Mantenha a opção **Use bundled OpenSSH**.
 2. Essa configuração costuma funcionar bem para a maioria dos usuários.
@@ -582,7 +583,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-9"></a>
 ### 🔹 Passo 9 – Selecionar o backend HTTPS
-![fig9](assets/3.git/fig09.png)
+![fig39](assets/3.git/fig09.png)
 
 1. Verifique a opção de biblioteca SSL apresentada pelo instalador.
 2. Mantenha a escolha padrão mostrada na imagem.
@@ -592,7 +593,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-10"></a>
 ### 🔹 Passo 10 – Configurar a conversão de fim de linha
-![fig10](assets/3.git/fig10.png)
+![fig40](assets/3.git/fig10.png)
 
 1. Na tela de **line endings**, mantenha a opção recomendada pelo instalador.
 2. Essa configuração facilita o trabalho entre Windows e ambientes baseados em Unix.
@@ -604,7 +605,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-11"></a>
 ### 🔹 Passo 11 – Escolher o terminal do Git Bash
-![fig11](assets/3.git/fig11.png)
+![fig41](assets/3.git/fig11.png)
 
 1. Verifique o emulador de terminal selecionado para o Git Bash.
 2. Mantenha a opção padrão indicada na imagem.
@@ -614,7 +615,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-12"></a>
 ### 🔹 Passo 12 – Definir o comportamento do git pull
-![fig12](assets/3.git/fig12.png)
+![fig42](assets/3.git/fig12.png)
 
 1. Na configuração do `git pull`, observe a opção recomendada pelo instalador.
 2. Mantenha a escolha padrão para evitar conflitos na rotina inicial.
@@ -624,7 +625,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-13"></a>
 ### 🔹 Passo 13 – Habilitar o gerenciador de credenciais
-![fig13](assets/3.git/fig13.png)
+![fig43](assets/3.git/fig13.png)
 
 1. Na tela de credenciais, mantenha o **Git Credential Manager** habilitado.
 2. Essa opção ajuda no armazenamento e na autenticação com serviços remotos.
@@ -636,7 +637,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-14"></a>
 ### 🔹 Passo 14 – Conferir as opções extras
-![fig14](assets/3.git/fig14.png)
+![fig44](assets/3.git/fig14.png)
 
 1. Revise as opções extras disponíveis, como cache de sistema de arquivos.
 2. Mantenha as seleções recomendadas mostradas na imagem.
@@ -646,7 +647,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-15"></a>
 ### 🔹 Passo 15 – Revisar as opções experimentais
-![fig15](assets/3.git/fig15.png)
+![fig45](assets/3.git/fig15.png)
 
 1. Observe as opções experimentais exibidas pelo instalador.
 2. Mantenha apenas o que estiver indicado no padrão da imagem.
@@ -658,7 +659,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="git-passo-16"></a>
 ### 🔹 Passo 16 – Finalizar a instalação do Git
-![fig16](assets/3.git/fig16.png)
+![fig46](assets/3.git/fig16.png)
 
 1. Aguarde até a tela de conclusão do assistente ser exibida.
 2. Revise as opções finais apresentadas.
@@ -675,7 +676,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-1"></a>
 ### 🔹 Passo 1 – Iniciar o assistente do com0com
-![fig1](assets/4.com0com/fig01.png)
+![fig51](assets/4.com0com/fig01.png)
 
 1. Abra o instalador do **com0com**.
 2. Leia a tela inicial do assistente.
@@ -687,7 +688,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-2"></a>
 ### 🔹 Passo 2 – Aceitar o contrato de licença
-![fig2](assets/4.com0com/fig02.png)
+![fig52](assets/4.com0com/fig02.png)
 
 1. Leia o contrato de licença exibido pelo instalador.
 2. Clique em **I Agree** para aceitar os termos.
@@ -697,7 +698,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-3"></a>
 ### 🔹 Passo 3 – Confirmar os componentes da instalação
-![fig3](assets/4.com0com/fig03.png)
+![fig53](assets/4.com0com/fig03.png)
 
 1. Observe os componentes que serão instalados.
 2. Mantenha os itens selecionados conforme mostrado na imagem.
@@ -707,7 +708,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-4"></a>
 ### 🔹 Passo 4 – Definir a pasta de destino
-![fig4](assets/4.com0com/fig04.png)
+![fig54](assets/4.com0com/fig04.png)
 
 1. Verifique o diretório de instalação do com0com.
 2. Se não houver necessidade de alteração, mantenha a pasta padrão.
@@ -717,7 +718,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-5"></a>
 ### 🔹 Passo 5 – Autorizar a instalação do driver
-![fig5](assets/4.com0com/fig05.png)
+![fig55](assets/4.com0com/fig05.png)
 
 1. Se o Windows solicitar autorização para instalar o driver, confirme a origem do software.
 2. Clique em **Instalar** para permitir a instalação do driver.
@@ -729,7 +730,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-6"></a>
 ### 🔹 Passo 6 – Aguardar a cópia dos arquivos
-![fig6](assets/4.com0com/fig06.png)
+![fig56](assets/4.com0com/fig06.png)
 
 1. Acompanhe a tela de progresso do instalador.
 2. Aguarde até a mensagem de instalação concluída aparecer.
@@ -739,7 +740,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="com0com-passo-7"></a>
 ### 🔹 Passo 7 – Encerrar o assistente do com0com
-![fig7](assets/4.com0com/fig07.png)
+![fig57](assets/4.com0com/fig07.png)
 
 1. Na tela final, confirme que a instalação foi concluída.
 2. Desmarque opções extras caso não queira abri-las imediatamente.
@@ -756,7 +757,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-1"></a>
 ### 🔹 Passo 1 – Abrir o menu Iniciar e acessar as Configurações
-![fig1](assets/4.1.config-com0com/Fig01.png)
+![fig61](assets/4.1.config-com0com/Fig01.png)
 
 1. Clique no botão **Iniciar** na barra de tarefas do Windows.
 2. Clique no ícone de **Configurações** para abrir as definições do sistema.
@@ -767,7 +768,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-2"></a>
 ### 🔹 Passo 2 – Verificar atualizações no Windows Update
-![fig2](assets/4.1.config-com0com/Fig02.png)
+![fig62](assets/4.1.config-com0com/Fig02.png)
 
 1. No menu lateral, clique em **Windows Update**.
 2. Clique em **Verificar se há atualizações** para atualizar a lista de drivers disponíveis.
@@ -779,7 +780,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-3"></a>
 ### 🔹 Passo 3 – Acessar as Opções avançadas do Windows Update
-![fig3](assets/4.1.config-com0com/Fig03.png)
+![fig63](assets/4.1.config-com0com/Fig03.png)
 
 1. Na tela de Opções avançadas, clique em **Atualizações opcionais**.
 2. Aguarde o sistema carregar a lista de drivers disponíveis.
@@ -788,7 +789,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-4"></a>
 ### 🔹 Passo 4 – Selecionar e instalar o driver CNCPorts
-![fig4](assets/4.1.config-com0com/Fig04.png)
+![fig64](assets/4.1.config-com0com/Fig04.png)
 
 1. Na lista de **Atualizações de driver**, marque a opção **Vyacheslav Frolov - CNCPorts**.
 2. Clique em **Baixar e instalar** para iniciar a instalação do driver.
@@ -799,7 +800,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-5"></a>
 ### 🔹 Passo 5 – Navegar até a pasta de instalação do com0com
-![fig5](assets/4.1.config-com0com/Fig05.png)
+![fig65](assets/4.1.config-com0com/Fig05.png)
 
 1. Abra o **Explorador de Arquivos** e navegue até `C:\Arquivos de Programas (x86)\com0com`.
 2. Localize o arquivo **setupg.exe** e dê **duplo clique** para executá-lo.
@@ -810,7 +811,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-6"></a>
 ### 🔹 Passo 6 – Autorizar a execução do setupg.exe
-![fig6](assets/4.1.config-com0com/Fig06.png)
+![fig66](assets/4.1.config-com0com/Fig06.png)
 
 1. Quando o **Controle de Conta de Usuário** solicitar permissão, clique em **Sim** para autorizar.
 2. Aguarde a abertura da janela de configuração do com0com.
@@ -821,7 +822,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-7"></a>
 ### 🔹 Passo 7 – Adicionar um par de portas virtuais no Setup do com0com
-![fig7](assets/4.1.config-com0com/Fig07.png)
+![fig67](assets/4.1.config-com0com/Fig07.png)
 
 1. Na janela **Setup for com0com**, clique em **Add Pair** para criar um novo par de portas virtuais.
 2. Observe as opções de configuração disponíveis para cada porta do par.
@@ -833,7 +834,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="config-com0com-passo-8"></a>
 ### 🔹 Passo 8 – Renomear a porta e aplicar a configuração
-![fig8](assets/4.1.config-com0com/Fig08.png)
+![fig68](assets/4.1.config-com0com/Fig08.png)
 
 1. No campo de nome da porta, altere para o nome desejado, por exemplo **COM10**.
 2. Clique em **Apply** para confirmar a alteração.
@@ -851,7 +852,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-1"></a>
 ### 🔹 Passo 1 – Escolher o modo de instalação do VS Code
-![fig1](assets/5.vscode/fig01.png)
+![fig71](assets/5.vscode/fig01.png)
 
 1. Ao abrir o instalador pelo prompt, observe a pergunta sobre o tipo de instalação.
 2. Digite **U** para selecionar o modo **User**.
@@ -863,7 +864,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-2"></a>
 ### 🔹 Passo 2 – Confirmar o aviso do instalador
-![fig2](assets/5.vscode/fig02.png)
+![fig72](assets/5.vscode/fig02.png)
 
 1. Caso apareça o aviso sobre instalação em modo de usuário, leia a mensagem exibida.
 2. Clique em **OK** para prosseguir.
@@ -873,7 +874,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-3"></a>
 ### 🔹 Passo 3 – Aceitar o contrato de licença
-![fig3](assets/5.vscode/fig03.png)
+![fig73](assets/5.vscode/fig03.png)
 
 1. Leia o contrato de licença apresentado pelo instalador.
 2. Marque a opção de aceite dos termos.
@@ -883,7 +884,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-4"></a>
 ### 🔹 Passo 4 – Selecionar as tarefas adicionais
-![fig4](assets/5.vscode/fig04.png)
+![fig74](assets/5.vscode/fig04.png)
 
 1. Revise as tarefas adicionais, como criação de ícone, integração ao menu de contexto e registro no PATH.
 2. Mantenha as opções recomendadas da imagem.
@@ -895,7 +896,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-5"></a>
 ### 🔹 Passo 5 – Iniciar a instalação do VS Code
-![fig5](assets/5.vscode/fig05.png)
+![fig75](assets/5.vscode/fig05.png)
 
 1. Revise o resumo das escolhas feitas no assistente.
 2. Clique em **Instalar** para iniciar o processo.
@@ -905,7 +906,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-6"></a>
 ### 🔹 Passo 6 – Concluir a instalação do editor
-![fig6](assets/5.vscode/fig06.png)
+![fig76](assets/5.vscode/fig06.png)
 
 1. Ao final da instalação, confira a mensagem de conclusão do assistente.
 2. Se desejar, mantenha a opção para iniciar o VS Code marcada.
@@ -917,7 +918,7 @@ Veja o vídeo abaixo de como proceder com a instalação correta do Python:
 
 <a id="vscode-passo-7"></a>
 ### 🔹 Passo 7 – Fechar o prompt do instalador
-![fig7](assets/5.vscode/fig07.png)
+![fig77](assets/5.vscode/fig07.png)
 
 1. Volte ao prompt exibido durante a instalação.
 2. Confirme que o processo foi finalizado.
@@ -948,7 +949,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-1"></a>
 ### 🔹 Passo 1 – Instalar o Git & GitHub Extension Pack
-![fig1](assets/6.1.extensions/fig01.png)
+![fig81](assets/6.1.extensions/fig01.png)
 
 1. Clique no ícone de **Extensões** na barra lateral do VS Code.
 2. Digite **GitHub pack** no campo de busca.
@@ -961,7 +962,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-2"></a>
 ### 🔹 Passo 2 – Instalar a extensão LasecGitSession
-![fig2](assets/6.1.extensions/fig02.png)
+![fig82](assets/6.1.extensions/fig02.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **lasec** no campo de busca.
@@ -974,7 +975,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-3"></a>
 ### 🔹 Passo 3 – Instalar a extensão lasecplot
-![fig3](assets/6.1.extensions/fig03.png)
+![fig83](assets/6.1.extensions/fig03.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **lasec** no campo de busca.
@@ -987,7 +988,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-4"></a>
 ### 🔹 Passo 4 – Instalar o Python Extension Pack
-![fig4](assets/6.1.extensions/fig04.png)
+![fig84](assets/6.1.extensions/fig04.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **python pack** no campo de busca.
@@ -1000,7 +1001,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-5"></a>
 ### 🔹 Passo 5 – Instalar o PlatformIO IDE
-![fig5](assets/6.1.extensions/fig05.png)
+![fig85](assets/6.1.extensions/fig05.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **platformio** no campo de busca.
@@ -1013,7 +1014,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-6"></a>
 ### 🔹 Passo 6 – Instalar a extensão Open in External App
-![fig6](assets/6.1.extensions/fig06.png)
+![fig86](assets/6.1.extensions/fig06.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **open-in** no campo de busca.
@@ -1026,7 +1027,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="extensions-passo-7"></a>
 ### 🔹 Passo 7 – Instalar a extensão Batch Runner
-![fig7](assets/6.1.extensions/fig07.png)
+![fig87](assets/6.1.extensions/fig07.png)
 
 1. Clique no ícone de **Extensões** na barra lateral.
 2. Digite **batch-** no campo de busca.
@@ -1041,13 +1042,61 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 ---
 
+<a id="new-platformio"></a>
+<details close>
+  <summary><strong> 🆕 Criando um novo projeto com o PlatformIO </strong></summary>
+
+<a id="new-platformio-passo-1"></a>
+### 🔹 Passo 1 – Abrir a PIO Home e iniciar um novo projeto
+![fig94](assets/6.platformio/fig04.png)
+
+1. Clique no ícone do **PlatformIO** na barra lateral.
+2. Abra a **PIO Home**.
+3. Clique em **Create New Project** ou **New Project** para começar.
+
+---
+
+<a id="new-platformio-passo-2"></a>
+### 🔹 Passo 2 – Preencher o assistente de criação do projeto
+![fig95](assets/6.platformio/fig05.png)
+
+1. Defina o nome do projeto.
+2. Selecione a placa **ESP32** correspondente ao kit utilizado na prática.
+3. Escolha o framework **Arduino** e clique em **Finish**.
+
+⚠️ *Confira a placa com atenção. A imagem mostra um exemplo, mas o seu projeto deve usar o modelo correto da ESP32.*
+
+---
+
+<a id="new-platformio-passo-3"></a>
+### 🔹 Passo 3 – Aguardar a geração da estrutura PlatformIO
+![fig96](assets/6.platformio/fig06.png)
+
+1. Aguarde o PlatformIO criar as pastas do projeto.
+2. Não feche o VS Code durante esse processo.
+3. Espere até a estrutura básica ficar disponível no explorador de arquivos.
+
+---
+
+### 🔹 Complemento – Video de criação e teste inicial do projeto
+
+Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
+
+[![Assista ao Vídeo](https://img.youtube.com/vi/HSSXU4XHBYY/hqdefault.jpg)](https://www.youtube.com/watch?v=HSSXU4XHBYY)
+
+💡 *Após instalar a extensão PlatformIO IDE, reinicie o VS Code para concluir a configuração do ambiente, se necessário.*
+
+</details>
+
+---
+
 <a id="fork"></a>
 <details close>
   <summary><strong> 🍴 Fazendo um fork no github </strong></summary>
 
 <a id="fork-passo-1"></a>
 ### 🔹 Passo 1 – Acessar a atividade prática no ambiente da disciplina
-![fig1](assets/6.2.fork/fig01.png)
+![fig101](assets/6.2.fork/fig01.png)
 
 1. Acesse o ambiente da disciplina e localize o bloco correspondente à atividade prática.
 2. Clique na atividade **Prática 01: GitHub + VSCode + Platform.IO** para abrir os detalhes.
@@ -1058,7 +1107,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="fork-passo-2"></a>
 ### 🔹 Passo 2 – Clicar no botão Fork no repositório do GitHub
-![fig2](assets/6.2.fork/fig02.png)
+![fig102](assets/6.2.fork/fig02.png)
 
 1. Acesse a página do repositório **II1P01_GitHub_VSCode_PIO** no GitHub.
 2. Clique no botão **Fork** localizado no canto superior direito da página.
@@ -1069,7 +1118,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="fork-passo-3"></a>
 ### 🔹 Passo 3 – Fazer login na conta do GitHub
-![fig3](assets/6.2.fork/fig03.png)
+![fig103](assets/6.2.fork/fig03.png)
 
 1. Caso não esteja autenticado, o GitHub exibirá a tela de login.
 2. Informe seu **usuário ou e-mail** e sua **senha**.
@@ -1081,7 +1130,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="fork-passo-4"></a>
 ### 🔹 Passo 4 – Confirmar a criação do fork
-![fig4](assets/6.2.fork/fig04.png)
+![fig104](assets/6.2.fork/fig04.png)
 
 1. Na tela **Create a new fork**, confira o **Owner** (sua conta) e o **Repository name**.
 2. Mantenha a opção **Copy the main branch only** marcada.
@@ -1093,7 +1142,7 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 <a id="fork-passo-5"></a>
 ### 🔹 Passo 5 – Sincronizar o fork com o repositório original
-![fig5](assets/6.2.fork/fig05.png)
+![fig105](assets/6.2.fork/fig05.png)
 
 1. Na página do seu fork, observe se há um aviso indicando que o branch está atrás do repositório original.
 2. Clique em **Update branch** para sincronizar o fork com as alterações mais recentes do repositório de origem.
@@ -1106,48 +1155,15 @@ Baixe e instale o VS Code conforme o vídeo abaixo:
 
 ---
 
-<a id="new-platformio"></a>
+<a id="compile"></a>
 <details close>
-  <summary><strong> 🆕 Criando um novo projeto com o PlatformIO </strong></summary>
+  <summary><strong> 🌿 Compilando e executando o projeto </strong></summary>
 
-<a id="new-platformio-passo-1"></a>
-### 🔹 Passo 1 – Abrir a PIO Home e iniciar um novo projeto
-![fig4](assets/6.platformio/fig04.png)
+<a id="compile-passo-1"></a>
+### 🔹 Passo 1 – Alterar os arquivos de compilação 
+![fig111](assets/6.platformio/fig07.png)
 
-1. Clique no ícone do **PlatformIO** na barra lateral.
-2. Abra a **PIO Home**.
-3. Clique em **Create New Project** ou **New Project** para começar.
-
----
-
-<a id="new-platformio-passo-2"></a>
-### 🔹 Passo 2 – Preencher o assistente de criação do projeto
-![fig5](assets/6.platformio/fig05.png)
-
-1. Defina o nome do projeto.
-2. Selecione a placa **ESP32** correspondente ao kit utilizado na prática.
-3. Escolha o framework **Arduino** e clique em **Finish**.
-
-⚠️ *Confira a placa com atenção. A imagem mostra um exemplo, mas o seu projeto deve usar o modelo correto da ESP32.*
-
----
-
-<a id="new-platformio-passo-3"></a>
-### 🔹 Passo 3 – Aguardar a geração da estrutura PlatformIO
-![fig6](assets/6.platformio/fig06.png)
-
-1. Aguarde o PlatformIO criar as pastas do projeto.
-2. Não feche o VS Code durante esse processo.
-3. Espere até a estrutura básica ficar disponível no explorador de arquivos.
-
----
-
-<a id="new-platformio-passo-4"></a>
-### 🔹 Passo 4 – Conferir os arquivos do projeto criado
-![fig7](assets/6.platformio/fig07.png)
-
-1. Verifique se foram criadas pastas como `src`, `include`, `lib` e o arquivo `platformio.ini`.
-2. Abra o arquivo **platformio.ini** cole o seguinte conteúdo.
+1. Abra o arquivo **platformio.ini** cole o seguinte conteúdo.
 
 ```bash
 
@@ -1174,7 +1190,7 @@ lib_deps =
 
 ✅ *O ambiente PlatformIO está configurado para iniciar o desenvolvimento com ESP32.*
 
-3. Abra na pasta **src** o arquivo **main.cpp** e cole o seguinte código.
+2. Abra na pasta **src** o arquivo **main.cpp** e cole o seguinte código.
 
 ```cpp
 
@@ -1214,21 +1230,10 @@ void loop()
 }
 
 ```
----
 
-<a id="new-platformio-passo-3"></a>
-### 🔹 Passo 5 – Aguardar a geração da estrutura PlatformIO
-![fig6](assets/6.platformio/fig06.png)
-
-1. Aguarde o PlatformIO criar as pastas do projeto.
-2. Não feche o VS Code durante esse processo.
-3. Espere até a estrutura básica ficar disponível no explorador de arquivos.
-
----
-
-<a id="new-platformio-passo-4"></a>
-### 🔹 Passo 6 – Compilar o projeto (Build)
-![fig7](assets/6.platformio/fig08.png)
+<a id="compile-passo-3"></a>
+### 🔹 Passo 3 – Compilar o projeto (Build)
+![fig113](assets/6.platformio/fig08.png)
 
 1. Após a criação do projeto, clique no ícone ✔️ (**Build**) na barra inferior do VS Code.
 2. Aguarde o processo de compilação iniciar no terminal.
@@ -1237,9 +1242,9 @@ void loop()
 
 ---
 
-<a id="new-platformio-passo-5"></a>
-### 🔹 Passo 7 – Acompanhar a compilação
-![fig8](assets/6.platformio/fig09.png)
+<a id="compile-passo-4"></a>
+### 🔹 Passo 4 – Acompanhar a compilação
+![fig114](assets/6.platformio/fig09.png)
 
 1. Observe o terminal exibindo o processo de compilação.
 2. Aguarde até aparecer a mensagem **SUCCESS**.
@@ -1248,9 +1253,9 @@ void loop()
 
 ---
 
-<a id="new-platformio-passo-6"></a>
-### 🔹 Passo 8 – Conectar e selecionar a porta COM
-![fig9](assets/6.platformio/fig10.png)
+<a id="compile-passo-5"></a>
+### 🔹 Passo 5 – Conectar e selecionar a porta COM
+![fig115](assets/6.platformio/fig10.png)
 
 1. Conecte a placa (ex: ESP32) ao computador via USB.
 2. Na barra inferior, clique na opção de porta (ex: **COM12**).
@@ -1259,9 +1264,9 @@ void loop()
 
 ---
 
-<a id="new-platformio-passo-7"></a>
-### 🔹 Passo 9 – Escolher a porta correta
-![fig10](assets/6.platformio/fig11.png)
+<a id="compile-passo-6"></a>
+### 🔹 Passo 6 – Escolher a porta correta
+![fig116](assets/6.platformio/fig11.png)
 
 1. Selecione a porta correspondente ao seu dispositivo.
 2. Normalmente aparecerá como **USB JTAG/serial** ou similar.
@@ -1270,9 +1275,9 @@ void loop()
 
 ---
 
-<a id="new-platformio-passo-8"></a>
-### 🔹 Passo 10 – Fazer upload para a placa
-![fig11](assets/6.platformio/fig12.png)
+<a id="compile-passo-7"></a>
+### 🔹 Passo 7 – Fazer upload para a placa
+![fig117](assets/6.platformio/fig12.png)
 
 1. Clique no ícone ➡️ (**Upload**) na barra inferior.
 2. Aguarde o envio do código para a placa.
@@ -1281,39 +1286,26 @@ void loop()
 
 ---
 
-<a id="new-platformio-passo-9"></a>
-### 🔹 Passo 11 – Confirmar execução na placa
-![fig12](assets/6.platformio/fig13.png)
+<a id="compile-passo-8"></a>
+### 🔹 Passo 8 – Confirmar execução na placa
+![fig118](assets/6.platformio/fig13.png)
 
 1. Após o upload, observe se não há erros no terminal.
 2. Caso necessário, abra o **Serial Monitor** para visualizar a execução.
 
 ✅ *Se tudo estiver correto, o código já estará rodando na placa.*
 
----
-
-### 🔹 Complemento – Criação e teste inicial do projeto
-
-1. Crie um projeto no PlatformIO configurado para usar **ESP32 Dev Module** com o framework **Arduino**.
-2. Substitua o código no arquivo `src/main.cpp` pelo exemplo fornecido na aula.
-3. Faça o upload para a ESP32 e acompanhe o terminal para validar a compilação e a gravação.
-
-Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
-
-[![Assista ao Vídeo](https://img.youtube.com/vi/HSSXU4XHBYY/hqdefault.jpg)](https://www.youtube.com/watch?v=HSSXU4XHBYY)
-
-💡 *Após instalar a extensão PlatformIO IDE, reinicie o VS Code para concluir a configuração do ambiente, se necessário.*
-
 </details>
 
 ---
+
 <a id="github"></a>
 <details close>
   <summary><strong> ☁️ Fazendo uma publicação do VSCode no github </strong></summary>
 
 <a id="github-passo-1a"></a>
 ### 🔹 Passo 1 – Iniciar login pela extensão na barra de status
-![fig1a](assets/7.github/fig01a.png)
+![fig121](assets/7.github/fig01a.png)
 
 1. Abra o projeto no **VS Code**.
 2. Na **barra de status inferior**, localize o ícone da extensão **LasecGitSession**.
@@ -1325,7 +1317,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1b"></a>
 ### 🔹 Passo 2 – Autorizar acesso ao GitHub
-![fig1b](assets/7.github/fig01b.png)
+![fig122](assets/7.github/fig01b.png)
 
 1. Uma janela será exibida solicitando autorização para a extensão.
 2. Clique em **Permitir** para continuar.
@@ -1336,7 +1328,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1c"></a>
 ### 🔹 Passo 3 – Selecionar a conta do GitHub
-![fig1c](assets/7.github/fig01c.png)
+![fig123](assets/7.github/fig01c.png)
 
 1. Selecione a conta GitHub que será usada pela extensão.
 2. Clique sobre o usuário listado.
@@ -1347,7 +1339,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1d"></a>
 ### 🔹 Passo 4 – Fazer login no GitHub
-![fig1d](assets/7.github/fig01d.png)
+![fig124](assets/7.github/fig01d.png)
 
 1. Informe seu **usuário ou e-mail** do GitHub.
 2. Digite sua **senha**.
@@ -1359,7 +1351,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1e"></a>
 ### 🔹 Passo 5 – Informar o nome do aluno
-![fig1e](assets/7.github/fig01e.png)
+![fig125](assets/7.github/fig01e.png)
 
 1. Digite o **nome completo do aluno**.
 2. Pressione **Enter** para confirmar.
@@ -1370,7 +1362,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1f"></a>
 ### 🔹 Passo 6 – Informar o e-mail do aluno
-![fig1f](assets/7.github/fig01f.png)
+![fig126](assets/7.github/fig01f.png)
 
 1. Digite o **e-mail do aluno**.
 2. Pressione **Enter** para confirmar.
@@ -1381,7 +1373,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1g"></a>
 ### 🔹 Passo 7 – Confirmar sessão ativa
-![fig1g](assets/7.github/fig01g.png)
+![fig127](assets/7.github/fig01g.png)
 
 1. Verifique a mensagem exibida no VS Code informando que a **LasecGitSession** está ativa.
 2. Após isso, a máquina estará pronta para realizar commits com a identificação configurada.
@@ -1390,7 +1382,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-1"></a>
 ### 🔹 Passo 8 – Iniciar a publicação do projeto no GitHub
-![fig1](assets/7.github/fig01.png)
+![fig128](assets/7.github/fig01.png)
 
 1. Abra o projeto no **VS Code**.
 2. Vá até a aba **Source Control** na barra lateral esquerda.
@@ -1402,7 +1394,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-2"></a>
 ### 🔹 Passo 9 – Autorizar o acesso à conta GitHub
-![fig2](assets/7.github/fig02.png)
+![fig129](assets/7.github/fig02.png)
 
 1. Quando o VS Code solicitar autenticação, escolha a opção de login no GitHub.
 2. Autorize a extensão a acessar sua conta.
@@ -1414,7 +1406,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-3"></a>
 ### 🔹 Passo 10 – Definir o nome e a visibilidade do repositório
-![fig3](assets/7.github/fig03.png)
+![fig130](assets/7.github/fig03.png)
 
 1. Escolha o nome do repositório que será criado.
 2. Defina se o repositório será **Public** ou **Private**.
@@ -1424,7 +1416,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-4"></a>
 ### 🔹 Passo 11 – Conferir os arquivos preparados para versionamento
-![fig4](assets/7.github/fig04.png)
+![fig131](assets/7.github/fig04.png)
 
 1. Observe a lista de arquivos exibida na área de controle de código.
 2. Verifique se os arquivos principais do projeto aparecem corretamente.
@@ -1434,7 +1426,7 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 
 <a id="github-passo-5a"></a>
 ### 🔹 Passo 12 – Faça isso apenas se vc não tiver a extensão **LasecGitSession**
-![fig5](assets/7.github/fig05.png)
+![fig132](assets/7.github/fig05.png)
 
 1. Se a extensão **LasecGitSession** não estiver instalada, abra o terminal integrado do VS Code.
 2. Configure sua identidade:
@@ -1458,7 +1450,7 @@ git config --global --unset user.email
 
 <a id="github-passo-6"></a>
 ### 🔹 Passo 13 – Validar a publicação no GitHub
-![fig6](assets/7.github/fig06.png)
+![fig133](assets/7.github/fig06.png)
 
 1. Abra o GitHub no navegador após a publicação.
 2. Verifique se o repositório aparece corretamente na sua conta.
