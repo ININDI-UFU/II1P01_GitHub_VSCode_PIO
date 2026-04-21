@@ -1,0 +1,12 @@
+Falta fazer:
+
+Rodando um código no VScode
+
+Fazendo o clone Repository (aula 02)
+
+Instalando o SimulIDE (aula 02)
+
+
+
+ 
+
