@@ -1599,6 +1599,3 @@ Ao final deste procedimento, espera-se que você tenha:
 - com0com: https://sourceforge.net/projects/com0com/
 
 </details>
-
-
-[def]: #new-platformio
