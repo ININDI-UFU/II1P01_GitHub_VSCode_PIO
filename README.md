@@ -108,6 +108,13 @@
   - [Passo 4 – Confirmar a criação do fork](#fork-passo-4)
   - [Passo 5 – Sincronizar o fork com o repositório original](#fork-passo-5)
 
+- [🖥️ Abrindo o fork no VSCode](#fork-new)
+  - [Passo 1 – Iniciar clonagem do repositório](#fork-new-passo-1)
+  - [Passo 2 – Escolher origem do repositório](#fork-new-passo-2)
+  - [Passo 3 – Selecionar o repositório desejado](#fork-new-passo-3)
+  - [Passo 4 – Definir a pasta de destino](#fork-new-passo-4)
+  - [Passo 5 – Abrir o projeto clonado](#fork-new-passo-5)
+
 - [🌿 Compilando e executando o projeto](#compile)
   - [Passo 1 – Alterar os arquivos de compilação](#compile-passo-1)
   - [Passo 2 – Aguardar a conclusão da compilação](#compile-passo-2)
@@ -1150,6 +1157,67 @@ Veja o vídeo abaixo sobre a criação e o teste inicial do projeto:
 ⚠️ *Manter o fork atualizado evita conflitos e garante que você esteja trabalhando com a versão mais recente do projeto.*
 
 ✅ *O fork foi criado com sucesso e está pronto para ser clonado e utilizado no VS Code.*
+
+</details>
+
+---
+
+<a id="fork-new"></a>
+<details close>
+  <summary><strong> 🖥️ Abrindo o fork no VSCode </strong></summary>
+
+<a id="fork-new-passo-1"></a>
+### 🔹 Passo 1 – Iniciar clonagem do repositório
+![fig141](assets/6.2.fork/fig06.png)
+
+1. Na tela inicial do **VS Code**, clique em **Clonar um Repositório Git...**  
+   **ou** utilize a opção na barra lateral (**Explorer**).
+
+💡 *Essa opção permite baixar um repositório remoto para sua máquina.*
+
+---
+
+<a id="fork-new-passo-2"></a>
+### 🔹 Passo 2 – Escolher origem do repositório
+![fig142](assets/6.2.fork/fig07.png)
+
+1. Clique em **Clonar do GitHub**.
+2. Aguarde o carregamento da lista de repositórios.
+
+💡 *Você também pode colar manualmente a URL do repositório.*
+
+---
+
+<a id="fork-new-passo-3"></a>
+### 🔹 Passo 3 – Selecionar o repositório desejado
+![fig143](assets/6.2.fork/fig08.png)
+
+1. Localize o repositório que você deseja clonar.
+2. Clique sobre ele para selecionar.
+
+💡 *Use a barra de busca para facilitar a localização.*
+
+---
+
+<a id="fork-new-passo-4"></a>
+### 🔹 Passo 4 – Definir a pasta de destino
+![fig144](assets/6.2.fork/fig09.png)
+
+1. Escolha a pasta onde o repositório será salvo.
+2. Clique em **Selecionar como Destino do Repositório**.
+
+💡 *Escolha um local organizado para manter seus projetos.*
+
+---
+
+<a id="fork-new-passo-5"></a>
+### 🔹 Passo 5 – Abrir o projeto clonado
+![fig145](assets/6.2.fork/fig10.png)
+
+1. Após o download, o VS Code exibirá uma janela de confirmação.
+2. Clique em **Abrir** ou **Abrir em Nova Janela**.
+
+💡 *Isso carregará automaticamente o projeto no editor.*
 
 </details>
 
