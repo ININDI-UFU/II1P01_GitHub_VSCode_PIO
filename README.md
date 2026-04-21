@@ -107,7 +107,12 @@
   - [Passo 1 – Abrir a PIO Home e iniciar um novo projeto](#new-platformio-passo-1)
   - [Passo 2 – Preencher o assistente de criação do projeto](#new-platformio-passo-2)
   - [Passo 3 – Aguardar a geração da estrutura PlatformIO](#new-platformio-passo-3)
-  - [Passo 4 – Conferir os arquivos do projeto criado](#new-platformio-passo-4)
+  - [Passo 4 – Compilar o projeto (Build)](#new-platformio-passo-4)
+  - [Passo 5 – Acompanhar a compilação](#new-platformio-passo-5)
+  - [Passo 6 – Conectar e selecionar a porta COM](#new-platformio-passo-6)
+  - [Passo 7 – Escolher a porta correta](#new-platformio-passo-7)
+  - [Passo 8 – Fazer upload para a placa](#new-platformio-passo-8)
+  - [Passo 9 – Confirmar execução na placa](#new-platformio-passo-9)
 
 - [☁️ Fazendo uma publicação do VSCode no GitHub](#github)
   - [Passo 1 – Iniciar login pela extensão](#github-passo-1a)
@@ -1209,6 +1214,81 @@ void loop()
 }
 
 ```
+---
+
+<a id="new-platformio-passo-3"></a>
+### 🔹 Passo 5 – Aguardar a geração da estrutura PlatformIO
+![fig6](assets/6.platformio/fig06.png)
+
+1. Aguarde o PlatformIO criar as pastas do projeto.
+2. Não feche o VS Code durante esse processo.
+3. Espere até a estrutura básica ficar disponível no explorador de arquivos.
+
+---
+
+<a id="new-platformio-passo-4"></a>
+### 🔹 Passo 6 – Compilar o projeto (Build)
+![fig7](assets/6.platformio/fig08.png)
+
+1. Após a criação do projeto, clique no ícone ✔️ (**Build**) na barra inferior do VS Code.
+2. Aguarde o processo de compilação iniciar no terminal.
+
+💡 *O PlatformIO irá compilar automaticamente todos os arquivos do projeto.*
+
+---
+
+<a id="new-platformio-passo-5"></a>
+### 🔹 Passo 7 – Acompanhar a compilação
+![fig8](assets/6.platformio/fig09.png)
+
+1. Observe o terminal exibindo o processo de compilação.
+2. Aguarde até aparecer a mensagem **SUCCESS**.
+
+💡 *Essa mensagem indica que o código foi compilado corretamente.*
+
+---
+
+<a id="new-platformio-passo-6"></a>
+### 🔹 Passo 8 – Conectar e selecionar a porta COM
+![fig9](assets/6.platformio/fig10.png)
+
+1. Conecte a placa (ex: ESP32) ao computador via USB.
+2. Na barra inferior, clique na opção de porta (ex: **COM12**).
+
+💡 *Se nenhuma porta aparecer, verifique o cabo ou driver da placa.*
+
+---
+
+<a id="new-platformio-passo-7"></a>
+### 🔹 Passo 9 – Escolher a porta correta
+![fig10](assets/6.platformio/fig11.png)
+
+1. Selecione a porta correspondente ao seu dispositivo.
+2. Normalmente aparecerá como **USB JTAG/serial** ou similar.
+
+💡 *Evite selecionar portas incorretas para não gerar erro no upload.*
+
+---
+
+<a id="new-platformio-passo-8"></a>
+### 🔹 Passo 10 – Fazer upload para a placa
+![fig11](assets/6.platformio/fig12.png)
+
+1. Clique no ícone ➡️ (**Upload**) na barra inferior.
+2. Aguarde o envio do código para a placa.
+
+💡 *O terminal exibirá o progresso do upload automaticamente.*
+
+---
+
+<a id="new-platformio-passo-9"></a>
+### 🔹 Passo 11 – Confirmar execução na placa
+![fig12](assets/6.platformio/fig13.png)
+
+1. Após o upload, observe se não há erros no terminal.
+2. Caso necessário, abra o **Serial Monitor** para visualizar a execução.
+
+✅ *Se tudo estiver correto, o código já estará rodando na placa.*
 
 ---
 
