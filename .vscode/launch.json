@@ -23,10 +23,11 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/Users/admin/OneDrive - Universidade Federal de Uberlândia/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI02_GitHub_VSCode_PIO_DebugESP32/.pio/build/esp32/firmware.elf",
+            "executable": "G:/Meu Drive/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI01_GitHub_VSCode_PIO/.pio/build/esp32/firmware.elf",
             "projectEnvName": "esp32",
-            "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32@src-88f34194123b4b05ff6ef6b8e68c7f60/misc/svd/esp32.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -36,19 +37,21 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/Users/admin/OneDrive - Universidade Federal de Uberlândia/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI02_GitHub_VSCode_PIO_DebugESP32/.pio/build/esp32/firmware.elf",
+            "executable": "G:/Meu Drive/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI01_GitHub_VSCode_PIO/.pio/build/esp32/firmware.elf",
             "projectEnvName": "esp32",
-            "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
-            "internalConsoleOptions": "openOnSessionStart"
+            "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32@src-88f34194123b4b05ff6ef6b8e68c7f60/misc/svd/esp32.svd"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "C:/Users/admin/OneDrive - Universidade Federal de Uberlândia/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI02_GitHub_VSCode_PIO_DebugESP32/.pio/build/esp32/firmware.elf",
+            "executable": "G:/Meu Drive/Josue/02 AulasUFU/01 Aulas_ININD1/Pratica/EININDI01_GitHub_VSCode_PIO/.pio/build/esp32/firmware.elf",
             "projectEnvName": "esp32",
-            "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/josuemorais/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/josuemorais/.platformio/platforms/espressif32@src-88f34194123b4b05ff6ef6b8e68c7f60/misc/svd/esp32.svd",
             "loadMode": "manual"
         }
     ],

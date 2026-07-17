@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "id": "component-1784293420489-268209",
+      "typeId": "subcircuits.esp32_devkitc_v4",
+      "properties": {},
+      "label": "ESP32 DevKitC V4 (placa completa)-1",
+      "showValue": false,
+      "visual": {
+        "x": 224,
+        "y": 120,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "component-1784293665220-541752",
+      "typeId": "peripherals.lasecplot",
+      "properties": {
+        "source_name": "LasecPlot-1"
+      },
+      "label": "LasecPlot-1",
+      "showValue": false,
+      "visual": {
+        "x": 382.96624820231534,
+        "y": 166.50330776418295,
+        "rotation": 0
+      }
+    }
+  ],
+  "topology": {
+    "revision": 394,
+    "nodes": [],
+    "conductors": [
+      {
+        "id": "wire-1784293687423-896625",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "RX"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784293665220-541752",
+          "pinId": "tx"
+        },
+        "vertices": [
+          {
+            "x": 382.96624820231534,
+            "y": 174
+          }
+        ]
+      },
+      {
+        "id": "wire-1784293693873-676465",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "TX"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784293665220-541752",
+          "pinId": "rx"
+        },
+        "vertices": [
+          {
+            "x": 352,
+            "y": 166
+          },
+          {
+            "x": 352,
+            "y": 191.2
+          },
+          {
+            "x": 382.96624820231534,
+            "y": 191.2
+          }
+        ]
+      }
+    ]
+  },
+  "visual": {
+    "viewport": {
+      "x": -282.89499119853565,
+      "y": -226.0754628374558,
+      "zoom": 2.43802730840895
+    }
+  },
+  "simulationSettings": {}
+}
