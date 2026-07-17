@@ -26,10 +26,52 @@
         "y": 166.50330776418295,
         "rotation": 0
       }
+    },
+    {
+      "id": "component-1784298585310-155809",
+      "typeId": "outputs.led",
+      "properties": {
+        "color": "Yellow",
+        "threshold": 2.4,
+        "resistance": 0.6
+      },
+      "label": "Led-1",
+      "showValue": false,
+      "visual": {
+        "x": 136.06542937565052,
+        "y": 198.30931841326665,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "component-1784298625693-701188",
+      "typeId": "other.ground",
+      "properties": {},
+      "label": "Ground (0 V)-1",
+      "showValue": false,
+      "visual": {
+        "x": 144.30000495910645,
+        "y": 251.6999969482422,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "component-1784298992794-230564",
+      "typeId": "passive.resistor",
+      "properties": {
+        "resistance": 1000
+      },
+      "label": "Resistor-1",
+      "showValue": true,
+      "visual": {
+        "x": 166.56581410141442,
+        "y": 170.96310898881785,
+        "rotation": 0
+      }
     }
   ],
   "topology": {
-    "revision": 394,
+    "revision": 419,
     "nodes": [],
     "conductors": [
       {
@@ -77,14 +119,70 @@
             "y": 191.2
           }
         ]
+      },
+      {
+        "id": "wire-1784298631550-915326",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784298585310-155809",
+          "pinId": "cathode"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784298625693-701188",
+          "pinId": "pin"
+        },
+        "vertices": []
+      },
+      {
+        "id": "wire-1784299010629-388893",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "G34"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784298992794-230564",
+          "pinId": "pin-2"
+        },
+        "vertices": [
+          {
+            "x": 198.56581410141442,
+            "y": 175.6729961734712
+          }
+        ]
+      },
+      {
+        "id": "wire-1784299019093-356032",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784298585310-155809",
+          "pinId": "anode"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784298992794-230564",
+          "pinId": "pin-1"
+        },
+        "vertices": [
+          {
+            "x": 152,
+            "y": 176
+          },
+          {
+            "x": 166.56581410141442,
+            "y": 176
+          }
+        ]
       }
     ]
   },
   "visual": {
     "viewport": {
-      "x": -282.89499119853565,
-      "y": -226.0754628374558,
-      "zoom": 2.43802730840895
+      "x": -594.9217205055537,
+      "y": -643.6184744313007,
+      "zoom": 4.876054616817897
     }
   },
   "simulationSettings": {}
