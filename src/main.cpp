@@ -6,7 +6,7 @@
 
 void setup()
 {
-    //Serial.begin(115200);
+    Serial.begin(115200);
     pinMode(LED_PIN, OUTPUT);
     pinMode(pinPWM, OUTPUT);
     pinMode(pinAnalog, INPUT);
@@ -29,5 +29,11 @@ void loop()
         const int analogValue = analogRead(pinAnalog);       // 0..4095 (12 bits)
         const int pwmValue = map(analogValue, 0, 4095, 0, 255); // analogWrite: 0..255
         analogWrite(pinPWM, pwmValue);
+
+        Serial.print(">graf:");
+        Serial.print(now);
+        Serial.print(":");
+        Serial.print(analogValue);
+        Serial.println("|g");
     }
 }

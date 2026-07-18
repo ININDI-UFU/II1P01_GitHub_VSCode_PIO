@@ -63,16 +63,19 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0.19517210417055972,
+        "position": 0.4354003713890698,
         "__ui_valueLabelX": 47,
-        "__ui_valueLabelY": -4
+        "__ui_valueLabelY": -4,
+        "__ui_dialLabelX": -25,
+        "__ui_dialLabelY": -7
       },
       "label": "Potentiometer-1",
       "showValue": true,
+      "showDialValue": true,
       "flipV": true,
       "visual": {
-        "x": 112.79932777334277,
-        "y": 153.70836085887396,
+        "x": 112.14306950239597,
+        "y": 155.02089617675378,
         "rotation": 90
       }
     },
@@ -144,7 +147,9 @@
       "properties": {
         "threshold": 2.5,
         "showVolt": true,
-        "negativeThreshold": -2.5
+        "negativeThreshold": -2.5,
+        "__ui_valueLabelX": 18,
+        "__ui_valueLabelY": 21
       },
       "label": "Probe-1",
       "showValue": false,
@@ -153,10 +158,25 @@
         "y": 271.56321736512274,
         "rotation": 0
       }
+    },
+    {
+      "id": "component-1784403032914-630873",
+      "typeId": "peripherals.lasecplot",
+      "properties": {
+        "source_name": "LasecPlot-1"
+      },
+      "label": "LasecPlot-1",
+      "showValue": false,
+      "showDialValue": false,
+      "visual": {
+        "x": 367.8944768176136,
+        "y": 167.2085308418322,
+        "rotation": 0
+      }
     }
   ],
   "topology": {
-    "revision": 828,
+    "revision": 986,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -364,14 +384,60 @@
           "pinId": "pin-3"
         },
         "vertices": []
+      },
+      {
+        "id": "wire-1784403040499-17086",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "RX"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784403032914-630873",
+          "pinId": "tx"
+        },
+        "vertices": [
+          {
+            "x": 367.8944768176136,
+            "y": 174
+          }
+        ]
+      },
+      {
+        "id": "wire-1784403050926-538733",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "TX"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784403032914-630873",
+          "pinId": "rx"
+        },
+        "vertices": [
+          {
+            "x": 344,
+            "y": 166
+          },
+          {
+            "x": 344,
+            "y": 192
+          },
+          {
+            "x": 367.8944768176136,
+            "y": 192
+          }
+        ]
       }
     ]
   },
   "visual": {
     "viewport": {
-      "x": 199.02835052266119,
-      "y": -197.24580436431683,
-      "zoom": 2.2081790273476125
+      "x": -48.390469941972924,
+      "y": -143.59461505318814,
+      "zoom": 2.208179027347612
     }
   },
   "simulationSettings": {}
