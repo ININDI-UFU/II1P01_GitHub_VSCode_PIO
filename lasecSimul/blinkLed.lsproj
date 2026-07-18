@@ -48,6 +48,7 @@
         "resistance": 1000
       },
       "label": "Resistor-1",
+      "showId": false,
       "showValue": false,
       "visual": {
         "x": 168.27282289414583,
@@ -57,7 +58,7 @@
     }
   ],
   "topology": {
-    "revision": 503,
+    "revision": 507,
     "nodes": [],
     "conductors": [
       {
@@ -111,8 +112,8 @@
   },
   "visual": {
     "viewport": {
-      "x": -100.38747194535529,
-      "y": -180.21446325406976,
+      "x": -105.08790482358103,
+      "y": -211.02499702824826,
       "zoom": 2.20817902734762
     }
   },
