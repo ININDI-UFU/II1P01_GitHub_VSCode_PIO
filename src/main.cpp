@@ -1,17 +1,32 @@
 #include <Arduino.h>
 
-const int LED_PIN =27;
+#define LED_PIN 13    //Configura o pino de Saida do LED
+#define pinPWM 27     //Configura o pino de Saida do PWM
+#define pinAnalog 23  //Configura o pino de Saida do Analogico
 
 void setup()
 {
+    //Serial.begin(115200);
     pinMode(LED_PIN, OUTPUT);
+    pinMode(pinPWM, OUTPUT);
+    pinMode(pinAnalog, INPUT);
 }
 
 void loop()
 {
-    digitalWrite(LED_PIN, HIGH);
-    delay(500);
+    const uint32_t now = millis();
+    static uint32_t t1 = 0;
+    if ((now - t1) >= 500)
+    {
+        t1 = now;
+        digitalWrite(LED_PIN, !digitalRead(LED_PIN));  
+    }
 
-    digitalWrite(LED_PIN, LOW);
-    delay(500);
+    static uint32_t t2 = 0;
+    if ((now - t2) >= 1)
+    {
+        t2 = now;
+        int analogValue = analogRead(pinAnalog);
+        analogWrite(pinPWM, analogValue);
+    }
 }
