@@ -45,7 +45,9 @@
       "id": "component-1784366729266-962806",
       "typeId": "passive.resistor",
       "properties": {
-        "resistance": 100
+        "resistance": 100,
+        "__ui_valueLabelX": -1,
+        "__ui_valueLabelY": -18
       },
       "label": "Resistor-1",
       "showId": false,
@@ -61,13 +63,16 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0.040790877815642154
+        "position": 0.19517210417055972,
+        "__ui_valueLabelX": 47,
+        "__ui_valueLabelY": -4
       },
       "label": "Potentiometer-1",
       "showValue": true,
+      "flipV": true,
       "visual": {
-        "x": 407.1594910186213,
-        "y": 128.52924022828796,
+        "x": 112.79932777334277,
+        "y": 153.70836085887396,
         "rotation": 90
       }
     },
@@ -77,9 +82,10 @@
       "properties": {},
       "label": "Ground (0 V)-2",
       "showValue": false,
+      "flipH": true,
       "visual": {
-        "x": 408.7679748048669,
-        "y": 180.45163035443173,
+        "x": 126.6632034766609,
+        "y": 199.77907319313272,
         "rotation": 0
       }
     },
@@ -91,9 +97,10 @@
       },
       "label": "Rail-1",
       "showValue": false,
+      "flipH": true,
       "visual": {
-        "x": 412.74293930407606,
-        "y": 100.68308143190157,
+        "x": 118.38277605879755,
+        "y": 125.86220206248757,
         "rotation": 0
       }
     },
@@ -101,7 +108,9 @@
       "id": "component-1784381016172-152852",
       "typeId": "outputs.dc_motor",
       "properties": {
-        "resistance": 10
+        "resistance": 1000,
+        "__ui_valueLabelX": -10,
+        "__ui_valueLabelY": -13
       },
       "label": "Dc Motor-1",
       "showValue": true,
@@ -116,11 +125,13 @@
       "id": "component-1784382462523-180466",
       "typeId": "passive.resistor",
       "properties": {
-        "resistance": 100
+        "resistance": 100,
+        "__ui_valueLabelX": -1,
+        "__ui_valueLabelY": -22
       },
       "label": "Resistor-2",
       "showId": false,
-      "showValue": false,
+      "showValue": true,
       "visual": {
         "x": 143.09437031786854,
         "y": 219.9660008350567,
@@ -145,7 +156,7 @@
     }
   ],
   "topology": {
-    "revision": 757,
+    "revision": 828,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -174,39 +185,6 @@
           "kind": "port",
           "componentId": "component-1784366729266-962806",
           "pinId": "pin-2"
-        },
-        "vertices": []
-      },
-      {
-        "id": "wire-1784380879781-144833",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784293420489-268209",
-          "pinId": "G23"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784380858833-890762",
-          "pinId": "pin-2"
-        },
-        "vertices": [
-          {
-            "x": 401.1594910186213,
-            "y": 149.81339780022117
-          }
-        ]
-      },
-      {
-        "id": "wire-1784380919682-294441",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784380858833-890762",
-          "pinId": "pin-3"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784380899574-54961",
-          "pinId": "pin"
         },
         "vertices": []
       },
@@ -271,12 +249,7 @@
           "kind": "node",
           "nodeId": "junction-1784381144978-434985"
         },
-        "vertices": [
-          {
-            "x": 96.02863878697997,
-            "y": 352
-          }
-        ]
+        "vertices": []
       },
       {
         "id": "wire-1784382472877-261323",
@@ -363,14 +336,42 @@
             "y": 304
           }
         ]
+      },
+      {
+        "id": "wire-1784395566122-211891",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784380858833-890762",
+          "pinId": "pin-2"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "G34"
+        },
+        "vertices": []
+      },
+      {
+        "id": "wire-1784395585332-330783",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784380899574-54961",
+          "pinId": "pin"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784380858833-890762",
+          "pinId": "pin-3"
+        },
+        "vertices": []
       }
     ]
   },
   "visual": {
     "viewport": {
-      "x": 250.1073528078099,
-      "y": -36.402215531265085,
-      "zoom": 1.640670712015268
+      "x": 199.02835052266119,
+      "y": -197.24580436431683,
+      "zoom": 2.2081790273476125
     }
   },
   "simulationSettings": {}

@@ -2,7 +2,7 @@
 
 #define LED_PIN 13    //Configura o pino de Saida do LED
 #define pinPWM 27     //Configura o pino de Saida do PWM
-#define pinAnalog 23  //Configura o pino de Saida do Analogico
+#define pinAnalog 34  // GPIO34 = ADC1_CH6 (GPIO23 nao possui ADC no ESP32 classico)
 
 void setup()
 {
@@ -26,7 +26,8 @@ void loop()
     if ((now - t2) >= 1)
     {
         t2 = now;
-        int analogValue = analogRead(pinAnalog);
-        analogWrite(pinPWM, analogValue);
+        const int analogValue = analogRead(pinAnalog);       // 0..4095 (12 bits)
+        const int pwmValue = map(analogValue, 0, 4095, 0, 255); // analogWrite: 0..255
+        analogWrite(pinPWM, pwmValue);
     }
 }
