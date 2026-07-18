@@ -14,20 +14,6 @@
       }
     },
     {
-      "id": "component-1784293665220-541752",
-      "typeId": "peripherals.lasecplot",
-      "properties": {
-        "source_name": "LasecPlot-1"
-      },
-      "label": "LasecPlot-1",
-      "showValue": false,
-      "visual": {
-        "x": 382.96624820231534,
-        "y": 166.50330776418295,
-        "rotation": 0
-      }
-    },
-    {
       "id": "component-1784298585310-155809",
       "typeId": "outputs.led",
       "properties": {
@@ -38,8 +24,8 @@
       "label": "Led-1",
       "showValue": false,
       "visual": {
-        "x": 136.06542937565052,
-        "y": 198.30931841326665,
+        "x": 122.70302991852077,
+        "y": 266.91436067134384,
         "rotation": 90
       }
     },
@@ -50,76 +36,30 @@
       "label": "Ground (0 V)-1",
       "showValue": false,
       "visual": {
-        "x": 144.30000495910645,
-        "y": 251.6999969482422,
+        "x": 130.68243930111205,
+        "y": 301.0841828764372,
         "rotation": 0
       }
     },
     {
-      "id": "component-1784298992794-230564",
+      "id": "component-1784366729266-962806",
       "typeId": "passive.resistor",
       "properties": {
         "resistance": 1000
       },
       "label": "Resistor-1",
-      "showValue": true,
+      "showValue": false,
       "visual": {
-        "x": 166.56581410141442,
-        "y": 170.96310898881785,
+        "x": 168.27282289414583,
+        "y": 252.6796886466195,
         "rotation": 0
       }
     }
   ],
   "topology": {
-    "revision": 419,
+    "revision": 503,
     "nodes": [],
     "conductors": [
-      {
-        "id": "wire-1784293687423-896625",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784293420489-268209",
-          "pinId": "RX"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784293665220-541752",
-          "pinId": "tx"
-        },
-        "vertices": [
-          {
-            "x": 382.96624820231534,
-            "y": 174
-          }
-        ]
-      },
-      {
-        "id": "wire-1784293693873-676465",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784293420489-268209",
-          "pinId": "TX"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784293665220-541752",
-          "pinId": "rx"
-        },
-        "vertices": [
-          {
-            "x": 352,
-            "y": 166
-          },
-          {
-            "x": 352,
-            "y": 191.2
-          },
-          {
-            "x": 382.96624820231534,
-            "y": 191.2
-          }
-        ]
-      },
       {
         "id": "wire-1784298631550-915326",
         "from": {
@@ -135,44 +75,35 @@
         "vertices": []
       },
       {
-        "id": "wire-1784299010629-388893",
+        "id": "wire-1784366744101-532473",
         "from": {
           "kind": "port",
           "componentId": "component-1784293420489-268209",
-          "pinId": "G34"
+          "pinId": "G13"
         },
         "to": {
           "kind": "port",
-          "componentId": "component-1784298992794-230564",
+          "componentId": "component-1784366729266-962806",
           "pinId": "pin-2"
         },
-        "vertices": [
-          {
-            "x": 198.56581410141442,
-            "y": 175.6729961734712
-          }
-        ]
+        "vertices": []
       },
       {
-        "id": "wire-1784299019093-356032",
+        "id": "wire-1784366753062-699820",
         "from": {
+          "kind": "port",
+          "componentId": "component-1784366729266-962806",
+          "pinId": "pin-1"
+        },
+        "to": {
           "kind": "port",
           "componentId": "component-1784298585310-155809",
           "pinId": "anode"
         },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784298992794-230564",
-          "pinId": "pin-1"
-        },
         "vertices": [
           {
-            "x": 152,
-            "y": 176
-          },
-          {
-            "x": 166.56581410141442,
-            "y": 176
+            "x": 138.70302991852077,
+            "y": 257.1796886466195
           }
         ]
       }
@@ -180,9 +111,9 @@
   },
   "visual": {
     "viewport": {
-      "x": -594.9217205055537,
-      "y": -643.6184744313007,
-      "zoom": 4.876054616817897
+      "x": -100.38747194535529,
+      "y": -180.21446325406976,
+      "zoom": 2.20817902734762
     }
   },
   "simulationSettings": {}
