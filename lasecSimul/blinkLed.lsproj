@@ -63,7 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0.4354003713890698,
+        "position": 1,
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -25,
@@ -72,11 +72,11 @@
       "label": "Potentiometer-1",
       "showValue": true,
       "showDialValue": true,
-      "flipV": true,
+      "flipV": false,
       "visual": {
         "x": 112.14306950239597,
-        "y": 155.02089617675378,
-        "rotation": 90
+        "y": 154.22089617675377,
+        "rotation": 270
       }
     },
     {
@@ -176,7 +176,7 @@
     }
   ],
   "topology": {
-    "revision": 1091,
+    "revision": 1273,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -205,20 +205,6 @@
           "kind": "port",
           "componentId": "component-1784366729266-962806",
           "pinId": "pin-2"
-        },
-        "vertices": []
-      },
-      {
-        "id": "wire-1784380954511-473315",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784380948993-238096",
-          "pinId": "pin-1"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784380858833-890762",
-          "pinId": "pin-1"
         },
         "vertices": []
       },
@@ -358,34 +344,6 @@
         ]
       },
       {
-        "id": "wire-1784395566122-211891",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784380858833-890762",
-          "pinId": "pin-2"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784293420489-268209",
-          "pinId": "G34"
-        },
-        "vertices": []
-      },
-      {
-        "id": "wire-1784395585332-330783",
-        "from": {
-          "kind": "port",
-          "componentId": "component-1784380899574-54961",
-          "pinId": "pin"
-        },
-        "to": {
-          "kind": "port",
-          "componentId": "component-1784380858833-890762",
-          "pinId": "pin-3"
-        },
-        "vertices": []
-      },
-      {
         "id": "wire-1784403040499-17086",
         "from": {
           "kind": "port",
@@ -430,14 +388,61 @@
             "y": 192
           }
         ]
+      },
+      {
+        "id": "wire-1784553700001-927917",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784380858833-890762",
+          "pinId": "pin-1"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784380899574-54961",
+          "pinId": "pin"
+        },
+        "vertices": [
+          {
+            "x": 134.14306950239597,
+            "y": 199.77907319313272
+          }
+        ]
+      },
+      {
+        "id": "wire-1784553703984-116515",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784380858833-890762",
+          "pinId": "pin-3"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784380948993-238096",
+          "pinId": "pin-1"
+        },
+        "vertices": []
+      },
+      {
+        "id": "wire-1784553707426-176605",
+        "from": {
+          "kind": "port",
+          "componentId": "component-1784380858833-890762",
+          "pinId": "pin-2"
+        },
+        "to": {
+          "kind": "port",
+          "componentId": "component-1784293420489-268209",
+          "pinId": "G34"
+        },
+        "vertices": []
       }
     ]
   },
   "visual": {
     "viewport": {
-      "x": 73.92295119324024,
-      "y": -218.87270333584797,
-      "zoom": 2.208179027347611
+      "x": 37.50814452432479,
+      "y": -150.03669485747733,
+      "zoom": 1.8114473285278014
     }
   },
   "simulationSettings": {}
