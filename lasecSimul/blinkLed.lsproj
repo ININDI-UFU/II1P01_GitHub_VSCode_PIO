@@ -63,7 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 1,
+        "position": 0.6850498811771699,
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -25,
@@ -87,7 +87,7 @@
       "showValue": false,
       "flipH": true,
       "visual": {
-        "x": 126.6632034766609,
+        "x": 125.8632034766609,
         "y": 199.77907319313272,
         "rotation": 0
       }
@@ -176,7 +176,7 @@
     }
   ],
   "topology": {
-    "revision": 1273,
+    "revision": 1301,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -440,9 +440,9 @@
   },
   "visual": {
     "viewport": {
-      "x": 37.50814452432479,
-      "y": -150.03669485747733,
-      "zoom": 1.8114473285278014
+      "zoom": 1.501637149671745,
+      "x": -0.8618342760609607,
+      "y": -138.2508402687247
     }
   },
   "simulationSettings": {}
