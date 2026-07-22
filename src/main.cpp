@@ -23,7 +23,7 @@ void loop()
     }
 
     static uint32_t t2 = 0;
-    if ((now - t2) >= 1)
+    if ((now - t2) >= 10)
     {
         t2 = now;
         const int analogValue = analogRead(pinAnalog);       // 0..4095 (12 bits)
