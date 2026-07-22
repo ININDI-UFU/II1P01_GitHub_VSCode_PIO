@@ -63,7 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0,
+        "position": 0.6572537330138104,
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -25,
@@ -178,7 +178,7 @@
     }
   ],
   "topology": {
-    "revision": 1309,
+    "revision": 1325,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
