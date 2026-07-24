@@ -8,8 +8,8 @@
       "label": "ESP32 DevKitC V4 (placa completa)-1",
       "showValue": false,
       "visual": {
-        "x": 224,
-        "y": 120,
+        "x": 211.71457916642942,
+        "y": 121.02378506946422,
         "rotation": 0
       }
     },
@@ -63,7 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0.4960723304366984,
+        "position": 0.362,
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -25,
@@ -163,11 +163,10 @@
       "id": "component-1784403032914-630873",
       "typeId": "peripherals.lasecplot",
       "properties": {
-        "source_name": "josue",
-        "baudrate": 921600,
-        "mode": "bidirectional"
+        "source_name": "LasecPlot-1",
+        "baudrate": 921600
       },
-      "label": "josue",
+      "label": "LasecPlot-1",
       "showValue": false,
       "showDialValue": false,
       "visual": {
@@ -178,7 +177,7 @@
     }
   ],
   "topology": {
-    "revision": 1373,
+    "revision": 1489,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -208,7 +207,12 @@
           "componentId": "component-1784366729266-962806",
           "pinId": "pin-2"
         },
-        "vertices": []
+        "vertices": [
+          {
+            "x": 200.27282289414583,
+            "y": 258.5386617353927
+          }
+        ]
       },
       {
         "id": "wire-1784381144978-731742",
@@ -271,7 +275,12 @@
           "componentId": "component-1784382462523-180466",
           "pinId": "pin-2"
         },
-        "vertices": []
+        "vertices": [
+          {
+            "x": 175.09437031786854,
+            "y": 225.8019095384098
+          }
+        ]
       },
       {
         "id": "wire-1784382479751-337393",
@@ -360,7 +369,7 @@
         "vertices": [
           {
             "x": 367.8944768176136,
-            "y": 174
+            "y": 175.02378506946422
           }
         ]
       },
@@ -379,7 +388,7 @@
         "vertices": [
           {
             "x": 344,
-            "y": 166
+            "y": 167.02378506946422
           },
           {
             "x": 344,
@@ -403,12 +412,7 @@
           "componentId": "component-1784380899574-54961",
           "pinId": "pin"
         },
-        "vertices": [
-          {
-            "x": 134.14306950239597,
-            "y": 199.77907319313272
-          }
-        ]
+        "vertices": []
       },
       {
         "id": "wire-1784553703984-116515",
@@ -442,9 +446,9 @@
   },
   "visual": {
     "viewport": {
-      "zoom": 1.9414392917652377,
-      "x": -19.928421524227588,
-      "y": -37.14944927086924
+      "x": 81.0707178457152,
+      "y": -251.44639490688678,
+      "zoom": 2.360250051202198
     }
   },
   "simulationSettings": {}
