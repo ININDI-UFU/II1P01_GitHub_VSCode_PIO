@@ -63,7 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-        "position": 0.6572537330138104,
+        "position": 0.4960723304366984,
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -25,
@@ -163,11 +163,11 @@
       "id": "component-1784403032914-630873",
       "typeId": "peripherals.lasecplot",
       "properties": {
-        "source_name": "LasecPlot-1",
+        "source_name": "josue",
         "baudrate": 921600,
         "mode": "bidirectional"
       },
-      "label": "LasecPlot-1",
+      "label": "josue",
       "showValue": false,
       "showDialValue": false,
       "visual": {
@@ -178,7 +178,7 @@
     }
   ],
   "topology": {
-    "revision": 1325,
+    "revision": 1373,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -442,9 +442,9 @@
   },
   "visual": {
     "viewport": {
-      "zoom": 2.5916233191689733,
-      "x": 218.37739361905471,
-      "y": -273.29479830027674
+      "zoom": 1.9414392917652377,
+      "x": -19.928421524227588,
+      "y": -37.14944927086924
     }
   },
   "simulationSettings": {}

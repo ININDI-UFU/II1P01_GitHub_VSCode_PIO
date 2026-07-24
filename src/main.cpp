@@ -6,7 +6,7 @@
 
 void setup()
 {
-    Serial.begin(115200);
+    Serial.begin(921600);
     pinMode(LED_PIN, OUTPUT);
     pinMode(pinPWM, OUTPUT);
     pinMode(pinAnalog, INPUT);
