@@ -163,11 +163,11 @@
       "id": "component-1784403032914-630873",
       "typeId": "peripherals.lasecplot",
       "properties": {
-        "source_name": "LasecPlot-1",
+        "source_name": "josue",
         "baudrate": 921600,
         "mode": "bidirectional"
       },
-      "label": "LasecPlot-1",
+      "label": "josue",
       "showValue": false,
       "showDialValue": false,
       "visual": {
@@ -178,7 +178,7 @@
     }
   ],
   "topology": {
-    "revision": 1325,
+    "revision": 1329,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -442,9 +442,9 @@
   },
   "visual": {
     "viewport": {
-      "zoom": 2.5916233191689733,
       "x": 218.37739361905471,
-      "y": -273.29479830027674
+      "y": -273.29479830027674,
+      "zoom": 2.5916233191689733
     }
   },
   "simulationSettings": {}

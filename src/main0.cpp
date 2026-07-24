@@ -10,7 +10,8 @@ void setup()
     pinMode(LED_PIN, OUTPUT);
     pinMode(pinPWM, OUTPUT);
     pinMode(pinAnalog, INPUT);
-    Serial.print("Iniciando transmissão de dados do ADC1_CH6 (GPIO34) para o PWM (GPIO27) e LED (GPIO13)...");
+    Serial.println("Iniciando transmissão de dados do ADC1_CH6 (GPIO34) para o PWM (GPIO27) e LED (GPIO13)...");
+    delay(500);
 }
 
 void loop()
