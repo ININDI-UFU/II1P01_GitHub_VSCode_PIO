@@ -63,11 +63,7 @@
       "typeId": "passive.potentiometer",
       "properties": {
         "resistance": 10000,
-<<<<<<< HEAD
-        "position": 0.362,
-=======
         "position": 0.969,
->>>>>>> 0059ea5ad8bf295c2013ffd386f7e5803f03c265
         "__ui_valueLabelX": 47,
         "__ui_valueLabelY": -4,
         "__ui_dialLabelX": -30,
@@ -170,11 +166,7 @@
         "source_name": "LasecPlot-1",
         "baudrate": 921600
       },
-<<<<<<< HEAD
-      "label": "LasecPlot-1",
-=======
       "label": "inind",
->>>>>>> 0059ea5ad8bf295c2013ffd386f7e5803f03c265
       "showValue": false,
       "showDialValue": false,
       "visual": {
@@ -185,11 +177,7 @@
     }
   ],
   "topology": {
-<<<<<<< HEAD
-    "revision": 1489,
-=======
     "revision": 1906,
->>>>>>> 0059ea5ad8bf295c2013ffd386f7e5803f03c265
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -378,16 +366,7 @@
           "componentId": "component-1784403032914-630873",
           "pinId": "tx"
         },
-<<<<<<< HEAD
-        "vertices": [
-          {
-            "x": 367.8944768176136,
-            "y": 175.02378506946422
-          }
-        ]
-=======
         "vertices": []
->>>>>>> 0059ea5ad8bf295c2013ffd386f7e5803f03c265
       },
       {
         "id": "wire-1784403050926-538733",
@@ -462,15 +441,9 @@
   },
   "visual": {
     "viewport": {
-<<<<<<< HEAD
-      "x": 81.0707178457152,
-      "y": -251.44639490688678,
-      "zoom": 2.360250051202198
-=======
       "zoom": 1.5544781573017792,
       "x": -15.956355730674261,
       "y": -48.84818913248802
->>>>>>> 0059ea5ad8bf295c2013ffd386f7e5803f03c265
     }
   },
   "simulationSettings": {}
