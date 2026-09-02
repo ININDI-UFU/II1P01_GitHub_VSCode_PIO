@@ -4,7 +4,9 @@
     {
       "id": "component-1784293420489-268209",
       "typeId": "subcircuits.esp32_devkitc_v4",
-      "properties": {},
+      "properties": {
+        "__ui_exposedMcu_mcu1_firmwarePath": "c:\\Prof_Josue\\0II1\\EININDI01_GitHub_VSCode_PIO\\sourcecode\\merged.bin"
+      },
       "label": "ESP32 DevKitC V4 (placa completa)-1",
       "showValue": false,
       "visual": {
@@ -177,7 +179,7 @@
     }
   ],
   "topology": {
-    "revision": 1906,
+    "revision": 1907,
     "nodes": [
       {
         "id": "junction-1784381144978-434985",
@@ -441,9 +443,9 @@
   },
   "visual": {
     "viewport": {
-      "zoom": 1.5544781573017792,
-      "x": -15.956355730674261,
-      "y": -48.84818913248802
+      "zoom": 1.6666677993138328,
+      "x": 272.02362093491297,
+      "y": -177.55644552635425
     }
   },
   "simulationSettings": {}
